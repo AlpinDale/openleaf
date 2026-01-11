@@ -10,6 +10,20 @@
   --border: #e5e5e5;
   --primary: #16a34a;
   --primary-foreground: #ffffff;
+  --card: #ffffff;
+  --card-foreground: #171717;
+}
+
+.dark {
+  --background: #0a0a0a;
+  --foreground: #ededed;
+  --muted: #1a1a1a;
+  --muted-foreground: #a3a3a3;
+  --border: #262626;
+  --primary: #22c55e;
+  --primary-foreground: #ffffff;
+  --card: #141414;
+  --card-foreground: #ededed;
 }
 
 body {
@@ -36,6 +50,23 @@ body {
   border-right: 1px solid var(--border);
 }
 
+.dark .cm-editor {
+  background-color: var(--background);
+}
+
+.dark .cm-editor .cm-gutters {
+  background-color: var(--muted);
+  color: var(--muted-foreground);
+}
+
+.dark .cm-editor .cm-activeLineGutter {
+  background-color: var(--border);
+}
+
+.dark .cm-editor .cm-activeLine {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
 /* PDF viewer customizations */
 .pdf-page {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
@@ -59,6 +90,18 @@ body {
 
 ::-webkit-scrollbar-thumb:hover {
   background: #a3a3a3;
+}
+
+.dark ::-webkit-scrollbar-track {
+  background: var(--muted);
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  background: #404040;
+}
+
+.dark ::-webkit-scrollbar-thumb:hover {
+  background: #525252;
 }
 
 /* Split pane resizer */

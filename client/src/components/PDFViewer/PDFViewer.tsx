@@ -186,7 +186,7 @@ export default function PDFViewer() {
 
   if (isLoading) {
     return (
-      <div className="h-full flex flex-col items-center justify-center text-gray-500">
+      <div className="h-full flex flex-col items-center justify-center text-gray-500 dark:text-gray-400">
         <Loader2 className="w-8 h-8 animate-spin mb-2" />
         <p>Loading PDF...</p>
       </div>
@@ -195,12 +195,12 @@ export default function PDFViewer() {
 
   if (error) {
     return (
-      <div className="h-full flex flex-col items-center justify-center text-gray-500">
+      <div className="h-full flex flex-col items-center justify-center text-gray-500 dark:text-gray-400">
         <div className="max-w-md p-4 text-center">
-          <h3 className="text-lg font-medium text-red-600 mb-2">
+          <h3 className="text-lg font-medium text-red-600 dark:text-red-400 mb-2">
             Error Loading PDF
           </h3>
-          <p className="text-red-700">{error}</p>
+          <p className="text-red-700 dark:text-red-400">{error}</p>
         </div>
       </div>
     );
@@ -208,23 +208,27 @@ export default function PDFViewer() {
 
   if (!pdfUrl) {
     return (
-      <div className="h-full flex flex-col items-center justify-center text-gray-500">
+      <div className="h-full flex flex-col items-center justify-center text-gray-500 dark:text-gray-400">
         {compileErrors.length > 0 ? (
           <div className="max-w-md p-4">
-            <h3 className="text-lg font-medium text-red-600 mb-2">
+            <h3 className="text-lg font-medium text-red-600 dark:text-red-400 mb-2">
               Compilation Errors
             </h3>
             <div className="space-y-2 max-h-96 overflow-auto">
               {compileErrors.map((err, index) => (
                 <div
                   key={index}
-                  className="text-sm bg-red-50 border border-red-200 rounded p-2"
+                  className="text-sm bg-red-50 dark:bg-red-900/20 border border-red-200 dark:border-red-800 rounded p-2"
                 >
                   {err.file && <span className="font-medium">{err.file}</span>}
                   {err.line && (
-                    <span className="text-red-600">:{err.line}</span>
+                    <span className="text-red-600 dark:text-red-400">
+                      :{err.line}
+                    </span>
                   )}
-                  <p className="text-red-700">{err.message}</p>
+                  <p className="text-red-700 dark:text-red-400">
+                    {err.message}
+                  </p>
                 </div>
               ))}
             </div>
@@ -242,21 +246,21 @@ export default function PDFViewer() {
   return (
     <div className="h-full flex flex-col">
       {/* Toolbar */}
-      <div className="h-10 bg-white border-b border-gray-200 flex items-center justify-between px-4 flex-shrink-0">
+      <div className="h-10 bg-white dark:bg-gray-800 border-b border-gray-200 dark:border-gray-700 flex items-center justify-between px-4 flex-shrink-0">
         <div className="flex items-center gap-2">
           <button
             onClick={zoomOut}
-            className="p-1 text-gray-600 hover:text-gray-900 hover:bg-gray-100 rounded"
+            className="p-1 text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700 rounded"
             title="Zoom out (Ctrl+-)"
           >
             <ZoomOut className="w-4 h-4" />
           </button>
-          <span className="text-sm text-gray-600 min-w-[4rem] text-center">
+          <span className="text-sm text-gray-600 dark:text-gray-400 min-w-[4rem] text-center">
             {Math.round(scale * 100)}%
           </span>
           <button
             onClick={zoomIn}
-            className="p-1 text-gray-600 hover:text-gray-900 hover:bg-gray-100 rounded"
+            className="p-1 text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700 rounded"
             title="Zoom in (Ctrl++)"
           >
             <ZoomIn className="w-4 h-4" />
@@ -264,10 +268,12 @@ export default function PDFViewer() {
         </div>
 
         <div className="flex items-center gap-2">
-          <span className="text-sm text-gray-600">{numPages} pages</span>
+          <span className="text-sm text-gray-600 dark:text-gray-400">
+            {numPages} pages
+          </span>
           <button
             onClick={handleDownload}
-            className="p-1 text-gray-600 hover:text-gray-900 hover:bg-gray-100 rounded"
+            className="p-1 text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700 rounded"
             title="Download PDF"
           >
             <Download className="w-4 h-4" />
@@ -278,7 +284,7 @@ export default function PDFViewer() {
       {/* PDF Pages - Continuous Scroll */}
       <div
         ref={containerRef}
-        className="flex-1 overflow-auto flex flex-col items-center p-4 bg-gray-200"
+        className="flex-1 overflow-auto flex flex-col items-center p-4 bg-gray-200 dark:bg-gray-900"
       >
         {pdf &&
           Array.from({ length: numPages }, (_, i) => (

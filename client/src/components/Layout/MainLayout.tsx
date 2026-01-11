@@ -11,10 +11,13 @@ import {
   MessageSquare,
   Share2,
   Save,
+  Moon,
+  Sun,
 } from "lucide-react";
 import { projectsApi, filesApi, compileApi } from "../../api/client";
 import { useProjectStore } from "../../stores/projectStore";
 import { useEditorStore } from "../../stores/editorStore";
+import { useThemeStore } from "../../stores/themeStore";
 import FileTree from "../FileTree/FileTree";
 import Editor from "../Editor/Editor";
 import EditorTabs from "../Editor/EditorTabs";
@@ -67,6 +70,7 @@ export default function MainLayout() {
     isFileDirty,
     restorePdfUrl,
   } = useEditorStore();
+  const { resolvedTheme, setTheme } = useThemeStore();
 
   const [panelSizes, setPanelSizes] = useState<PanelSizes>(loadPanelSizes);
   const [showFileTree, setShowFileTree] = useState(true);
@@ -169,13 +173,13 @@ export default function MainLayout() {
   );
 
   return (
-    <div className="h-screen flex flex-col">
+    <div className="h-screen flex flex-col bg-white dark:bg-gray-900">
       {/* Header */}
-      <header className="h-12 bg-white border-b border-gray-200 flex items-center justify-between px-4 flex-shrink-0">
+      <header className="h-12 bg-white dark:bg-gray-800 border-b border-gray-200 dark:border-gray-700 flex items-center justify-between px-4 flex-shrink-0">
         <div className="flex items-center gap-4">
           <button
             onClick={() => setShowFileTree(!showFileTree)}
-            className="p-1.5 rounded hover:bg-gray-100 text-gray-600"
+            className="p-1.5 rounded hover:bg-gray-100 dark:hover:bg-gray-700 text-gray-600 dark:text-gray-400"
             title={showFileTree ? "Hide file tree" : "Show file tree"}
           >
             {showFileTree ? (
@@ -186,12 +190,12 @@ export default function MainLayout() {
           </button>
           <button
             onClick={() => navigate("/projects")}
-            className="flex items-center gap-1 text-gray-600 hover:text-gray-900"
+            className="flex items-center gap-1 text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-200"
           >
             <ArrowLeft className="w-4 h-4" />
             Projects
           </button>
-          <span className="text-lg font-medium">
+          <span className="text-lg font-medium text-gray-900 dark:text-gray-100">
             {projectData?.name || "Loading..."}
           </span>
         </div>
@@ -208,8 +212,8 @@ export default function MainLayout() {
             disabled={isSaving || !activeFileDirty}
             className={`flex items-center gap-2 px-4 py-1.5 rounded border ${
               activeFileDirty
-                ? "bg-white border-primary-600 text-primary-600 hover:bg-primary-50"
-                : "bg-gray-100 border-gray-300 text-gray-400 cursor-not-allowed"
+                ? "bg-white dark:bg-gray-800 border-primary-600 text-primary-600 hover:bg-primary-50 dark:hover:bg-gray-700"
+                : "bg-gray-100 dark:bg-gray-700 border-gray-300 dark:border-gray-600 text-gray-400 cursor-not-allowed"
             } disabled:opacity-50`}
             title={
               activeFileDirty ? "Save file (Ctrl+S)" : "No changes to save"
@@ -236,17 +240,34 @@ export default function MainLayout() {
           </button>
           <button
             onClick={() => setShowComments(!showComments)}
-            className={`p-1.5 rounded hover:bg-gray-100 ${showComments ? "text-primary-600 bg-primary-50" : "text-gray-600"}`}
+            className={`p-1.5 rounded hover:bg-gray-100 dark:hover:bg-gray-700 ${showComments ? "text-primary-600 bg-primary-50 dark:bg-primary-900/30" : "text-gray-600 dark:text-gray-400"}`}
             title={showComments ? "Hide comments" : "Show comments"}
           >
             <MessageSquare className="w-5 h-5" />
           </button>
           <button
             onClick={() => setShowShareDialog(true)}
-            className="p-1.5 rounded hover:bg-gray-100 text-gray-600"
+            className="p-1.5 rounded hover:bg-gray-100 dark:hover:bg-gray-700 text-gray-600 dark:text-gray-400"
             title="Share project"
           >
             <Share2 className="w-5 h-5" />
+          </button>
+          <button
+            onClick={() =>
+              setTheme(resolvedTheme === "dark" ? "light" : "dark")
+            }
+            className="p-1.5 rounded hover:bg-gray-100 dark:hover:bg-gray-700 text-gray-600 dark:text-gray-400"
+            title={
+              resolvedTheme === "dark"
+                ? "Switch to light mode"
+                : "Switch to dark mode"
+            }
+          >
+            {resolvedTheme === "dark" ? (
+              <Sun className="w-5 h-5" />
+            ) : (
+              <Moon className="w-5 h-5" />
+            )}
           </button>
         </div>
       </header>
@@ -262,11 +283,11 @@ export default function MainLayout() {
                 minSize={10}
                 maxSize={30}
               >
-                <div className="h-full bg-gray-50 border-r border-gray-200 overflow-auto">
+                <div className="h-full bg-gray-50 dark:bg-gray-800 border-r border-gray-200 dark:border-gray-700 overflow-auto">
                   <FileTree />
                 </div>
               </Panel>
-              <PanelResizeHandle className="w-1 bg-gray-200 hover:bg-primary-500 transition-colors" />
+              <PanelResizeHandle className="w-1 bg-gray-200 dark:bg-gray-700 hover:bg-primary-500 transition-colors" />
             </>
           )}
 
@@ -279,13 +300,13 @@ export default function MainLayout() {
             }
             minSize={20}
           >
-            <div className="h-full flex flex-col">
+            <div className="h-full flex flex-col bg-white dark:bg-gray-900">
               <EditorTabs />
               <div className="flex-1 overflow-hidden">
                 {activeFile ? (
                   <Editor filePath={activeFile} />
                 ) : (
-                  <div className="h-full flex items-center justify-center text-gray-500">
+                  <div className="h-full flex items-center justify-center text-gray-500 dark:text-gray-400">
                     Select a file to edit
                   </div>
                 )}
@@ -293,11 +314,11 @@ export default function MainLayout() {
             </div>
           </Panel>
 
-          <PanelResizeHandle className="w-1 bg-gray-200 hover:bg-primary-500 transition-colors" />
+          <PanelResizeHandle className="w-1 bg-gray-200 dark:bg-gray-700 hover:bg-primary-500 transition-colors" />
 
           {/* PDF viewer */}
           <Panel defaultSize={panelSizes.pdf} minSize={20}>
-            <div className="h-full bg-gray-100">
+            <div className="h-full bg-gray-100 dark:bg-gray-800">
               <PDFViewer />
             </div>
           </Panel>
@@ -305,9 +326,9 @@ export default function MainLayout() {
           {/* Comments panel */}
           {showComments && projectId && (
             <>
-              <PanelResizeHandle className="w-1 bg-gray-200 hover:bg-primary-500 transition-colors" />
+              <PanelResizeHandle className="w-1 bg-gray-200 dark:bg-gray-700 hover:bg-primary-500 transition-colors" />
               <Panel defaultSize={20} minSize={15} maxSize={35}>
-                <div className="h-full border-l border-gray-200">
+                <div className="h-full border-l border-gray-200 dark:border-gray-700">
                   <CommentsPanel projectId={projectId} />
                 </div>
               </Panel>

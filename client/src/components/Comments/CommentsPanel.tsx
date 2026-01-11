@@ -109,15 +109,15 @@ export default function CommentsPanel({ projectId }: CommentsPanelProps) {
   };
 
   return (
-    <div className="h-full flex flex-col bg-white">
+    <div className="h-full flex flex-col bg-white dark:bg-gray-800">
       {/* Header */}
-      <div className="p-3 border-b border-gray-200">
+      <div className="p-3 border-b border-gray-200 dark:border-gray-700">
         <div className="flex items-center justify-between mb-2">
-          <h3 className="font-medium flex items-center gap-2">
+          <h3 className="font-medium flex items-center gap-2 text-gray-900 dark:text-gray-100">
             <MessageSquare className="w-4 h-4" />
             Comments
           </h3>
-          <span className="text-sm text-gray-500">
+          <span className="text-sm text-gray-500 dark:text-gray-400">
             {filteredComments.length} comment
             {filteredComments.length !== 1 ? "s" : ""}
           </span>
@@ -131,8 +131,8 @@ export default function CommentsPanel({ projectId }: CommentsPanelProps) {
               onClick={() => setFilter(f)}
               className={`px-2 py-1 text-xs rounded ${
                 filter === f
-                  ? "bg-primary-100 text-primary-700"
-                  : "text-gray-600 hover:bg-gray-100"
+                  ? "bg-primary-100 dark:bg-primary-900/30 text-primary-700 dark:text-primary-400"
+                  : "text-gray-600 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700"
               }`}
             >
               {f.charAt(0).toUpperCase() + f.slice(1)}
@@ -143,8 +143,8 @@ export default function CommentsPanel({ projectId }: CommentsPanelProps) {
 
       {/* Add comment form */}
       {isAddingComment && pendingSelection && (
-        <div className="p-3 border-b border-gray-200 bg-gray-50">
-          <div className="text-xs text-gray-500 mb-2">
+        <div className="p-3 border-b border-gray-200 dark:border-gray-700 bg-gray-50 dark:bg-gray-700/50">
+          <div className="text-xs text-gray-500 dark:text-gray-400 mb-2">
             Line
             {pendingSelection.lineStart !== pendingSelection.lineEnd
               ? "s"
@@ -157,7 +157,7 @@ export default function CommentsPanel({ projectId }: CommentsPanelProps) {
             value={newCommentText}
             onChange={(e) => setNewCommentText(e.target.value)}
             placeholder="Add a comment..."
-            className="w-full p-2 text-sm border border-gray-300 rounded resize-none focus:outline-none focus:ring-2 focus:ring-primary-500"
+            className="w-full p-2 text-sm border border-gray-300 dark:border-gray-600 rounded resize-none bg-white dark:bg-gray-700 text-gray-900 dark:text-gray-100 focus:outline-none focus:ring-2 focus:ring-primary-500"
             rows={3}
             autoFocus
           />
@@ -168,7 +168,7 @@ export default function CommentsPanel({ projectId }: CommentsPanelProps) {
                 setPendingSelection(null);
                 setNewCommentText("");
               }}
-              className="px-2 py-1 text-sm text-gray-600 hover:bg-gray-100 rounded"
+              className="px-2 py-1 text-sm text-gray-600 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-600 rounded"
             >
               Cancel
             </button>
@@ -187,13 +187,13 @@ export default function CommentsPanel({ projectId }: CommentsPanelProps) {
       {/* Comments list */}
       <div className="flex-1 overflow-auto">
         {filteredComments.length === 0 ? (
-          <div className="p-4 text-center text-gray-500 text-sm">
+          <div className="p-4 text-center text-gray-500 dark:text-gray-400 text-sm">
             {activeFile
               ? "No comments on this file. Select text and press Ctrl+M to add a comment."
               : "Select a file to view comments."}
           </div>
         ) : (
-          <div className="divide-y divide-gray-100">
+          <div className="divide-y divide-gray-100 dark:divide-gray-700">
             {filteredComments.map((comment) => (
               <CommentItem
                 key={comment.id}
@@ -232,26 +232,28 @@ function CommentItem({
   return (
     <div
       className={`p-3 cursor-pointer transition-colors ${
-        isSelected ? "bg-primary-50" : "hover:bg-gray-50"
+        isSelected
+          ? "bg-primary-50 dark:bg-primary-900/20"
+          : "hover:bg-gray-50 dark:hover:bg-gray-700"
       } ${comment.resolved ? "opacity-60" : ""}`}
       onClick={onSelect}
     >
       <div className="flex items-start justify-between gap-2">
         <div className="flex-1 min-w-0">
           <div className="flex items-center gap-2 mb-1">
-            <span className="font-medium text-sm truncate">
+            <span className="font-medium text-sm truncate text-gray-900 dark:text-gray-100">
               {comment.author_name}
             </span>
-            <span className="text-xs text-gray-400">
+            <span className="text-xs text-gray-400 dark:text-gray-500">
               {formatDate(comment.created_at)}
             </span>
           </div>
-          <div className="text-xs text-gray-500 mb-1">
+          <div className="text-xs text-gray-500 dark:text-gray-400 mb-1">
             Line{comment.line_start !== comment.line_end ? "s" : ""}{" "}
             {comment.line_start}
             {comment.line_start !== comment.line_end && `-${comment.line_end}`}
           </div>
-          <p className="text-sm text-gray-700 whitespace-pre-wrap break-words">
+          <p className="text-sm text-gray-700 dark:text-gray-300 whitespace-pre-wrap break-words">
             {comment.content}
           </p>
         </div>
@@ -263,7 +265,7 @@ function CommentItem({
                 e.stopPropagation();
                 onResolve();
               }}
-              className="p-1 text-gray-400 hover:text-green-600 rounded"
+              className="p-1 text-gray-400 hover:text-green-600 dark:hover:text-green-400 rounded"
               title="Resolve"
             >
               <Check className="w-4 h-4" />
@@ -274,7 +276,7 @@ function CommentItem({
               e.stopPropagation();
               onDelete();
             }}
-            className="p-1 text-gray-400 hover:text-red-600 rounded"
+            className="p-1 text-gray-400 hover:text-red-600 dark:hover:text-red-400 rounded"
             title="Delete"
           >
             <Trash2 className="w-4 h-4" />
@@ -283,7 +285,7 @@ function CommentItem({
       </div>
 
       {comment.resolved && (
-        <div className="mt-2 text-xs text-green-600 flex items-center gap-1">
+        <div className="mt-2 text-xs text-green-600 dark:text-green-400 flex items-center gap-1">
           <Check className="w-3 h-3" />
           Resolved
         </div>
