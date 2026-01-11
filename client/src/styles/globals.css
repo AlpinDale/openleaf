@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  --muted: #f5f5f5;
+  --muted-foreground: #737373;
+  --border: #e5e5e5;
+  --primary: #16a34a;
+  --primary-foreground: #ffffff;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    'Helvetica Neue', Arial, sans-serif;
+  background-color: var(--background);
+  color: var(--foreground);
+  margin: 0;
+  padding: 0;
+}
+
+/* CodeMirror customizations */
+.cm-editor {
+  height: 100%;
+  font-size: 14px;
+}
+
+.cm-editor .cm-content {
+  font-family: 'JetBrains Mono', 'Fira Code', 'Source Code Pro', monospace;
+}
+
+.cm-editor .cm-gutters {
+  background-color: var(--muted);
+  border-right: 1px solid var(--border);
+}
+
+/* PDF viewer customizations */
+.pdf-page {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 16px;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--muted);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c4c4c4;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #a3a3a3;
+}
+
+/* Split pane resizer */
+.resize-handle {
+  background-color: var(--border);
+  transition: background-color 0.2s;
+}
+
+.resize-handle:hover {
+  background-color: var(--primary);
+}

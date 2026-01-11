@@ -1,0 +1,45 @@
+[package]
+name = "openleaf-server"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[dependencies]
+# Async runtime
+tokio = { workspace = true }
+
+# Web framework
+axum = { workspace = true }
+axum-extra = { workspace = true }
+tower = { workspace = true }
+tower-http = { workspace = true }
+
+# Database
+sqlx = { workspace = true }
+
+# Serialization
+serde = { workspace = true }
+serde_json = { workspace = true }
+
+# Authentication
+jsonwebtoken = { workspace = true }
+argon2 = { workspace = true }
+
+# Utilities
+uuid = { workspace = true }
+chrono = { workspace = true }
+
+# CRDT for collaboration
+yrs = { workspace = true }
+
+# Logging
+tracing = { workspace = true }
+tracing-subscriber = { workspace = true }
+
+# Error handling
+thiserror = { workspace = true }
+anyhow = { workspace = true }
+
+# Additional dependencies
+futures = "0.3"
+tokio-stream = "0.1"
