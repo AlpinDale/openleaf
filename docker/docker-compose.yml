@@ -1,0 +1,17 @@
+services:
+  openleaf:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile
+    ports:
+      - "3000:3000"
+    volumes:
+      - openleaf-data:/data
+    environment:
+      - DATABASE_URL=sqlite:///data/openleaf.db?mode=rwc
+      - STORAGE_PATH=/data/projects
+      - JWT_SECRET=${JWT_SECRET:-change-this-in-production}
+    restart: unless-stopped
+
+volumes:
+  openleaf-data:
