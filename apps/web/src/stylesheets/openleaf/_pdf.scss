@@ -1,0 +1,116 @@
+// PDF preview: SyncTeX controls at the panel's left edge, placeholders, detached page.
+.openleaf-pdf-panel {
+  .synctex-controls.openleaf-synctex-controls {
+    left: var(--spacing-02);
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 0;
+    z-index: 12; // above the PDF viewer and the logs pane
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-02);
+    padding: var(--spacing-01);
+    background-color: var(--bg-primary-themed);
+    border-radius: var(--border-radius-full);
+    border: 1px solid var(--border-divider-themed);
+  }
+
+  .synctex-control:not(.detach-synctex-control) {
+    margin-bottom: 0;
+    background-color: transparent;
+    color: var(--content-primary-themed);
+
+    &:hover,
+    &:active,
+    &:focus {
+      background-color: var(--bg-tertiary-themed);
+    }
+  }
+
+  .pdf-preview-messages {
+    position: absolute;
+    top: var(--spacing-04);
+    left: var(--spacing-09);
+    right: var(--spacing-06);
+    z-index: 2;
+  }
+
+  .toolbar-pdf-controls .pdfjs-viewer-controls {
+    gap: var(--spacing-02);
+  }
+
+  // the browser's own PDF viewer (`pdfViewer: 'native'`)
+  .openleaf-native-pdf-viewer {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: 0;
+  }
+
+  .openleaf-synctex-unavailable {
+    display: inline-flex;
+    align-items: center;
+    padding: var(--spacing-02);
+    color: var(--content-secondary-themed);
+    cursor: help;
+  }
+}
+
+// detached PDF window whose editor window went away
+.openleaf-detached-orphan-banner {
+  padding: var(--spacing-02) var(--spacing-04);
+}
+
+.openleaf-pdf-placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-03);
+  height: 100%;
+  color: var(--content-secondary-themed);
+}
+
+.openleaf-detached-pdf {
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+
+  > .openleaf-pdf-panel {
+    flex: 1;
+    min-height: 0;
+  }
+}
+
+// Keep the toolbar on one row in narrow panels.
+.openleaf-pdf-panel {
+  container-type: inline-size;
+
+  .pdfjs-page-number-input {
+    white-space: nowrap;
+    padding-right: var(--spacing-02);
+  }
+
+  .pdfjs-toolbar-buttons {
+    gap: var(--spacing-01);
+    margin: 0 var(--spacing-02);
+  }
+
+  .toolbar-pdf-compile-time {
+    padding: 0 var(--spacing-02);
+  }
+
+  @container (width < 600px) {
+    .toolbar-pdf-compile-time,
+    .pdfjs-page-number-input {
+      display: none;
+    }
+  }
+
+  @container (width < 460px) {
+    .pdfjs-zoom-controls,
+    .toolbar-item[data-testid='pdf-presentation-mode'] {
+      display: none;
+    }
+  }
+}

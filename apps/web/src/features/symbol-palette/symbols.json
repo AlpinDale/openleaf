@@ -1,0 +1,2570 @@
+[
+  {
+    "command": "\\alpha",
+    "character": "α",
+    "codepoint": "U+03B1",
+    "name": "small alpha, greek",
+    "category": "Greek",
+    "package": null
+  },
+  {
+    "command": "\\beta",
+    "character": "β",
+    "codepoint": "U+03B2",
+    "name": "small beta, greek",
+    "category": "Greek",
+    "package": null
+  },
+  {
+    "command": "\\gamma",
+    "character": "γ",
+    "codepoint": "U+03B3",
+    "name": "small gamma, greek",
+    "category": "Greek",
+    "package": null
+  },
+  {
+    "command": "\\delta",
+    "character": "δ",
+    "codepoint": "U+03B4",
+    "name": "small delta, greek",
+    "category": "Greek",
+    "package": null
+  },
+  {
+    "command": "\\epsilon",
+    "character": "ϵ",
+    "codepoint": "U+03F5",
+    "name": "greek lunate varepsilon symbol",
+    "category": "Greek",
+    "package": null
+  },
+  {
+    "command": "\\zeta",
+    "character": "ζ",
+    "codepoint": "U+03B6",
+    "name": "small zeta, greek",
+    "category": "Greek",
+    "package": null
+  },
+  {
+    "command": "\\eta",
+    "character": "η",
+    "codepoint": "U+03B7",
+    "name": "small eta, greek",
+    "category": "Greek",
+    "package": null
+  },
+  {
+    "command": "\\theta",
+    "character": "θ",
+    "codepoint": "U+03B8",
+    "name": "straight theta, small theta, greek",
+    "category": "Greek",
+    "package": null
+  },
+  {
+    "command": "\\iota",
+    "character": "ι",
+    "codepoint": "U+03B9",
+    "name": "small iota, greek",
+    "category": "Greek",
+    "package": null
+  },
+  {
+    "command": "\\kappa",
+    "character": "κ",
+    "codepoint": "U+03BA",
+    "name": "small kappa, greek",
+    "category": "Greek",
+    "package": null
+  },
+  {
+    "command": "\\lambda",
+    "character": "λ",
+    "codepoint": "U+03BB",
+    "name": "small lambda, greek",
+    "category": "Greek",
+    "package": null
+  },
+  {
+    "command": "\\mu",
+    "character": "μ",
+    "codepoint": "U+03BC",
+    "name": "small mu, greek",
+    "category": "Greek",
+    "package": null
+  },
+  {
+    "command": "\\nu",
+    "character": "ν",
+    "codepoint": "U+03BD",
+    "name": "small nu, greek",
+    "category": "Greek",
+    "package": null
+  },
+  {
+    "command": "\\xi",
+    "character": "ξ",
+    "codepoint": "U+03BE",
+    "name": "small xi, greek",
+    "category": "Greek",
+    "package": null
+  },
+  {
+    "command": "\\pi",
+    "character": "π",
+    "codepoint": "U+03C0",
+    "name": "small pi, greek",
+    "category": "Greek",
+    "package": null
+  },
+  {
+    "command": "\\rho",
+    "character": "ρ",
+    "codepoint": "U+03C1",
+    "name": "small rho, greek",
+    "category": "Greek",
+    "package": null
+  },
+  {
+    "command": "\\sigma",
+    "character": "σ",
+    "codepoint": "U+03C3",
+    "name": "small sigma, greek",
+    "category": "Greek",
+    "package": null
+  },
+  {
+    "command": "\\tau",
+    "character": "τ",
+    "codepoint": "U+03C4",
+    "name": "small tau, greek",
+    "category": "Greek",
+    "package": null
+  },
+  {
+    "command": "\\upsilon",
+    "character": "υ",
+    "codepoint": "U+03C5",
+    "name": "small upsilon, greek",
+    "category": "Greek",
+    "package": null
+  },
+  {
+    "command": "\\phi",
+    "character": "ϕ",
+    "codepoint": "U+03D5",
+    "name": "/straightphi - small phi, greek",
+    "category": "Greek",
+    "package": null
+  },
+  {
+    "command": "\\chi",
+    "character": "χ",
+    "codepoint": "U+03C7",
+    "name": "small chi, greek",
+    "category": "Greek",
+    "package": null
+  },
+  {
+    "command": "\\psi",
+    "character": "ψ",
+    "codepoint": "U+03C8",
+    "name": "small psi, greek",
+    "category": "Greek",
+    "package": null
+  },
+  {
+    "command": "\\omega",
+    "character": "ω",
+    "codepoint": "U+03C9",
+    "name": "small omega, greek",
+    "category": "Greek",
+    "package": null
+  },
+  {
+    "command": "\\varepsilon",
+    "character": "ε",
+    "codepoint": "U+03B5",
+    "name": "rounded small varepsilon, greek",
+    "category": "Greek",
+    "package": null
+  },
+  {
+    "command": "\\vartheta",
+    "character": "ϑ",
+    "codepoint": "U+03D1",
+    "name": "/vartheta - curly or open theta",
+    "category": "Greek",
+    "package": null
+  },
+  {
+    "command": "\\varpi",
+    "character": "ϖ",
+    "codepoint": "U+03D6",
+    "name": "rounded small pi (pomega), greek",
+    "category": "Greek",
+    "package": null
+  },
+  {
+    "command": "\\varrho",
+    "character": "ϱ",
+    "codepoint": "U+03F1",
+    "name": "rounded small rho, greek",
+    "category": "Greek",
+    "package": null
+  },
+  {
+    "command": "\\varsigma",
+    "character": "ς",
+    "codepoint": "U+03C2",
+    "name": "terminal sigma, greek",
+    "category": "Greek",
+    "package": null
+  },
+  {
+    "command": "\\varphi",
+    "character": "φ",
+    "codepoint": "U+03C6",
+    "name": "curly or open small phi, greek",
+    "category": "Greek",
+    "package": null
+  },
+  {
+    "command": "\\Gamma",
+    "character": "Γ",
+    "codepoint": "U+0393",
+    "name": "capital gamma, greek",
+    "category": "Greek",
+    "package": null
+  },
+  {
+    "command": "\\Delta",
+    "character": "Δ",
+    "codepoint": "U+0394",
+    "name": "capital delta, greek",
+    "category": "Greek",
+    "package": null
+  },
+  {
+    "command": "\\Theta",
+    "character": "Θ",
+    "codepoint": "U+0398",
+    "name": "capital theta, greek",
+    "category": "Greek",
+    "package": null
+  },
+  {
+    "command": "\\Lambda",
+    "character": "Λ",
+    "codepoint": "U+039B",
+    "name": "capital lambda, greek",
+    "category": "Greek",
+    "package": null
+  },
+  {
+    "command": "\\Xi",
+    "character": "Ξ",
+    "codepoint": "U+039E",
+    "name": "capital xi, greek",
+    "category": "Greek",
+    "package": null
+  },
+  {
+    "command": "\\Pi",
+    "character": "Π",
+    "codepoint": "U+03A0",
+    "name": "capital pi, greek",
+    "category": "Greek",
+    "package": null
+  },
+  {
+    "command": "\\Sigma",
+    "character": "Σ",
+    "codepoint": "U+03A3",
+    "name": "capital sigma, greek",
+    "category": "Greek",
+    "package": null
+  },
+  {
+    "command": "\\Upsilon",
+    "character": "Υ",
+    "codepoint": "U+03A5",
+    "name": "capital upsilon, greek",
+    "category": "Greek",
+    "package": null
+  },
+  {
+    "command": "\\Phi",
+    "character": "Φ",
+    "codepoint": "U+03A6",
+    "name": "capital phi, greek",
+    "category": "Greek",
+    "package": null
+  },
+  {
+    "command": "\\Psi",
+    "character": "Ψ",
+    "codepoint": "U+03A8",
+    "name": "capital psi, greek",
+    "category": "Greek",
+    "package": null
+  },
+  {
+    "command": "\\Omega",
+    "character": "Ω",
+    "codepoint": "U+03A9",
+    "name": "capital omega, greek",
+    "category": "Greek",
+    "package": null
+  },
+  {
+    "command": "\\aleph",
+    "character": "ℵ",
+    "codepoint": "U+2135",
+    "name": "aleph, hebrew",
+    "category": "Misc",
+    "package": null
+  },
+  {
+    "command": "\\imath",
+    "character": "𝚤",
+    "codepoint": "U+1D6A4",
+    "name": "mathematical italic small dotless i",
+    "category": "Misc",
+    "package": null
+  },
+  {
+    "command": "\\jmath",
+    "character": "𝚥",
+    "codepoint": "U+1D6A5",
+    "name": "mathematical italic small dotless j",
+    "category": "Misc",
+    "package": null
+  },
+  {
+    "command": "\\ell",
+    "character": "ℓ",
+    "codepoint": "U+2113",
+    "name": "cursive small l",
+    "category": "Misc",
+    "package": null
+  },
+  {
+    "command": "\\wp",
+    "character": "℘",
+    "codepoint": "U+2118",
+    "name": "weierstrass p",
+    "category": "Misc",
+    "package": null
+  },
+  {
+    "command": "\\Re",
+    "character": "ℜ",
+    "codepoint": "U+211C",
+    "name": "real part",
+    "category": "Misc",
+    "package": null
+  },
+  {
+    "command": "\\Im",
+    "character": "ℑ",
+    "codepoint": "U+2111",
+    "name": "imaginary part",
+    "category": "Misc",
+    "package": null
+  },
+  {
+    "command": "\\partial",
+    "character": "∂",
+    "codepoint": "U+2202",
+    "name": "partial differential",
+    "category": "Misc",
+    "package": null
+  },
+  {
+    "command": "\\infty",
+    "character": "∞",
+    "codepoint": "U+221E",
+    "name": "infinity",
+    "category": "Misc",
+    "package": null
+  },
+  {
+    "command": "\\prime",
+    "character": "′",
+    "codepoint": "U+2032",
+    "name": "prime or minute, not superscripted",
+    "category": "Misc",
+    "package": null
+  },
+  {
+    "command": "\\nabla",
+    "character": "∇",
+    "codepoint": "U+2207",
+    "name": "nabla, del, hamilton operator",
+    "category": "Misc",
+    "package": null
+  },
+  {
+    "command": "\\top",
+    "character": "⊤",
+    "codepoint": "U+22A4",
+    "name": "top",
+    "category": "Misc",
+    "package": null
+  },
+  {
+    "command": "\\bot",
+    "character": "⊥",
+    "codepoint": "U+22A5",
+    "name": "bottom",
+    "category": "Misc",
+    "package": null
+  },
+  {
+    "command": "\\forall",
+    "character": "∀",
+    "codepoint": "U+2200",
+    "name": "for all",
+    "category": "Misc",
+    "package": null
+  },
+  {
+    "command": "\\exists",
+    "character": "∃",
+    "codepoint": "U+2203",
+    "name": "at least one exists",
+    "category": "Misc",
+    "package": null
+  },
+  {
+    "command": "\\neg",
+    "character": "¬",
+    "codepoint": "U+00AC",
+    "name": "/neg /lnot not sign",
+    "category": "Misc",
+    "package": null
+  },
+  {
+    "command": "\\flat",
+    "character": "♭",
+    "codepoint": "U+266D",
+    "name": "musical flat",
+    "category": "Misc",
+    "package": null
+  },
+  {
+    "command": "\\natural",
+    "character": "♮",
+    "codepoint": "U+266E",
+    "name": "music natural",
+    "category": "Misc",
+    "package": null
+  },
+  {
+    "command": "\\sharp",
+    "character": "♯",
+    "codepoint": "U+266F",
+    "name": "musical sharp",
+    "category": "Misc",
+    "package": null
+  },
+  {
+    "command": "\\clubsuit",
+    "character": "♣",
+    "codepoint": "U+2663",
+    "name": "club suit symbol",
+    "category": "Misc",
+    "package": null
+  },
+  {
+    "command": "\\diamondsuit",
+    "character": "♢",
+    "codepoint": "U+2662",
+    "name": "diamond suit symbol",
+    "category": "Misc",
+    "package": null
+  },
+  {
+    "command": "\\heartsuit",
+    "character": "♡",
+    "codepoint": "U+2661",
+    "name": "heart suit symbol",
+    "category": "Misc",
+    "package": null
+  },
+  {
+    "command": "\\spadesuit",
+    "character": "♠",
+    "codepoint": "U+2660",
+    "name": "spades suit symbol",
+    "category": "Misc",
+    "package": null
+  },
+  {
+    "command": "\\coprod",
+    "character": "∐",
+    "codepoint": "U+2210",
+    "name": "coproduct operator",
+    "category": "Operators",
+    "package": null
+  },
+  {
+    "command": "\\bigvee",
+    "character": "⋁",
+    "codepoint": "U+22C1",
+    "name": "logical or operator",
+    "category": "Operators",
+    "package": null
+  },
+  {
+    "command": "\\bigwedge",
+    "character": "⋀",
+    "codepoint": "U+22C0",
+    "name": "logical and operator",
+    "category": "Operators",
+    "package": null
+  },
+  {
+    "command": "\\biguplus",
+    "character": "⨄",
+    "codepoint": "U+2A04",
+    "name": "n-ary union operator with plus",
+    "category": "Operators",
+    "package": null
+  },
+  {
+    "command": "\\bigcap",
+    "character": "⋂",
+    "codepoint": "U+22C2",
+    "name": "intersection operator",
+    "category": "Operators",
+    "package": null
+  },
+  {
+    "command": "\\bigcup",
+    "character": "⋃",
+    "codepoint": "U+22C3",
+    "name": "union operator",
+    "category": "Operators",
+    "package": null
+  },
+  {
+    "command": "\\prod",
+    "character": "∏",
+    "codepoint": "U+220F",
+    "name": "product operator",
+    "category": "Operators",
+    "package": null
+  },
+  {
+    "command": "\\sum",
+    "character": "∑",
+    "codepoint": "U+2211",
+    "name": "summation operator",
+    "category": "Operators",
+    "package": null
+  },
+  {
+    "command": "\\bigotimes",
+    "character": "⨂",
+    "codepoint": "U+2A02",
+    "name": "n-ary circled times operator",
+    "category": "Operators",
+    "package": null
+  },
+  {
+    "command": "\\bigoplus",
+    "character": "⨁",
+    "codepoint": "U+2A01",
+    "name": "n-ary circled plus operator",
+    "category": "Operators",
+    "package": null
+  },
+  {
+    "command": "\\bigodot",
+    "character": "⨀",
+    "codepoint": "U+2A00",
+    "name": "n-ary circled dot operator",
+    "category": "Operators",
+    "package": null
+  },
+  {
+    "command": "\\bigsqcup",
+    "character": "⨆",
+    "codepoint": "U+2A06",
+    "name": "n-ary square union operator",
+    "category": "Operators",
+    "package": null
+  },
+  {
+    "command": "\\triangleleft",
+    "character": "◁",
+    "codepoint": "U+25C1",
+    "name": "(large) left triangle, open; z notation domain restriction",
+    "category": "Operators",
+    "package": null
+  },
+  {
+    "command": "\\triangleright",
+    "character": "▷",
+    "codepoint": "U+25B7",
+    "name": "(large) right triangle, open; z notation range restriction",
+    "category": "Operators",
+    "package": null
+  },
+  {
+    "command": "\\bigtriangleup",
+    "character": "△",
+    "codepoint": "U+25B3",
+    "name": "big up triangle, open",
+    "category": "Operators",
+    "package": null
+  },
+  {
+    "command": "\\bigtriangledown",
+    "character": "▽",
+    "codepoint": "U+25BD",
+    "name": "big down triangle, open",
+    "category": "Operators",
+    "package": null
+  },
+  {
+    "command": "\\wedge",
+    "character": "∧",
+    "codepoint": "U+2227",
+    "name": "/wedge /land b: logical and",
+    "category": "Operators",
+    "package": null
+  },
+  {
+    "command": "\\vee",
+    "character": "∨",
+    "codepoint": "U+2228",
+    "name": "/vee /lor b: logical or",
+    "category": "Operators",
+    "package": null
+  },
+  {
+    "command": "\\cap",
+    "character": "∩",
+    "codepoint": "U+2229",
+    "name": "intersection",
+    "category": "Operators",
+    "package": null
+  },
+  {
+    "command": "\\cup",
+    "character": "∪",
+    "codepoint": "U+222A",
+    "name": "union or logical sum",
+    "category": "Operators",
+    "package": null
+  },
+  {
+    "command": "\\ddagger",
+    "character": "‡",
+    "codepoint": "U+2021",
+    "name": "double dagger relation",
+    "category": "Operators",
+    "package": null
+  },
+  {
+    "command": "\\dagger",
+    "character": "†",
+    "codepoint": "U+2020",
+    "name": "dagger relation",
+    "category": "Operators",
+    "package": null
+  },
+  {
+    "command": "\\sqcap",
+    "character": "⊓",
+    "codepoint": "U+2293",
+    "name": "square intersection",
+    "category": "Operators",
+    "package": null
+  },
+  {
+    "command": "\\sqcup",
+    "character": "⊔",
+    "codepoint": "U+2294",
+    "name": "square union",
+    "category": "Operators",
+    "package": null
+  },
+  {
+    "command": "\\uplus",
+    "character": "⊎",
+    "codepoint": "U+228E",
+    "name": "plus sign in union",
+    "category": "Operators",
+    "package": null
+  },
+  {
+    "command": "\\amalg",
+    "character": "⨿",
+    "codepoint": "U+2A3F",
+    "name": "amalgamation or coproduct",
+    "category": "Operators",
+    "package": null
+  },
+  {
+    "command": "\\wr",
+    "character": "≀",
+    "codepoint": "U+2240",
+    "name": "wreath product",
+    "category": "Operators",
+    "package": null
+  },
+  {
+    "command": "\\div",
+    "character": "÷",
+    "codepoint": "U+00F7",
+    "name": "divide sign",
+    "category": "Operators",
+    "package": null
+  },
+  {
+    "command": "\\odot",
+    "character": "⊙",
+    "codepoint": "U+2299",
+    "name": "middle dot in circle",
+    "category": "Operators",
+    "package": null
+  },
+  {
+    "command": "\\oslash",
+    "character": "⊘",
+    "codepoint": "U+2298",
+    "name": "solidus in circle",
+    "category": "Operators",
+    "package": null
+  },
+  {
+    "command": "\\otimes",
+    "character": "⊗",
+    "codepoint": "U+2297",
+    "name": "multiply sign in circle",
+    "category": "Operators",
+    "package": null
+  },
+  {
+    "command": "\\ominus",
+    "character": "⊖",
+    "codepoint": "U+2296",
+    "name": "minus sign in circle",
+    "category": "Operators",
+    "package": null
+  },
+  {
+    "command": "\\oplus",
+    "character": "⊕",
+    "codepoint": "U+2295",
+    "name": "plus sign in circle",
+    "category": "Operators",
+    "package": null
+  },
+  {
+    "command": "\\mp",
+    "character": "∓",
+    "codepoint": "U+2213",
+    "name": "minus-or-plus sign",
+    "category": "Operators",
+    "package": null
+  },
+  {
+    "command": "\\pm",
+    "character": "±",
+    "codepoint": "U+00B1",
+    "name": "plus-or-minus sign",
+    "category": "Operators",
+    "package": null
+  },
+  {
+    "command": "\\setminus",
+    "character": "∖",
+    "codepoint": "U+2216",
+    "name": "set minus (cf. reverse solidus)",
+    "category": "Operators",
+    "package": null
+  },
+  {
+    "command": "\\cdot",
+    "character": "⋅",
+    "codepoint": "U+22C5",
+    "name": "small middle dot",
+    "category": "Operators",
+    "package": null
+  },
+  {
+    "command": "\\ast",
+    "character": "∗",
+    "codepoint": "U+2217",
+    "name": "centered asterisk",
+    "category": "Operators",
+    "package": null
+  },
+  {
+    "command": "\\times",
+    "character": "×",
+    "codepoint": "U+00D7",
+    "name": "multiply sign",
+    "category": "Operators",
+    "package": null
+  },
+  {
+    "command": "\\star",
+    "character": "⋆",
+    "codepoint": "U+22C6",
+    "name": "small star, filled, low",
+    "category": "Operators",
+    "package": null
+  },
+  {
+    "command": "\\propto",
+    "character": "∝",
+    "codepoint": "U+221D",
+    "name": "is proportional to",
+    "category": "Relations",
+    "package": null
+  },
+  {
+    "command": "\\sqsubseteq",
+    "character": "⊑",
+    "codepoint": "U+2291",
+    "name": "square subset, equals",
+    "category": "Relations",
+    "package": null
+  },
+  {
+    "command": "\\sqsupseteq",
+    "character": "⊒",
+    "codepoint": "U+2292",
+    "name": "square superset, equals",
+    "category": "Relations",
+    "package": null
+  },
+  {
+    "command": "\\parallel",
+    "character": "∥",
+    "codepoint": "U+2225",
+    "name": "parallel",
+    "category": "Relations",
+    "package": null
+  },
+  {
+    "command": "\\mid",
+    "character": "∣",
+    "codepoint": "U+2223",
+    "name": "/mid r:",
+    "category": "Relations",
+    "package": null
+  },
+  {
+    "command": "\\dashv",
+    "character": "⊣",
+    "codepoint": "U+22A3",
+    "name": "dash, vertical",
+    "category": "Relations",
+    "package": null
+  },
+  {
+    "command": "\\vdash",
+    "character": "⊢",
+    "codepoint": "U+22A2",
+    "name": "vertical, dash",
+    "category": "Relations",
+    "package": null
+  },
+  {
+    "command": "\\nearrow",
+    "character": "↗",
+    "codepoint": "U+2197",
+    "name": "ne pointing arrow",
+    "category": "Arrows",
+    "package": null
+  },
+  {
+    "command": "\\searrow",
+    "character": "↘",
+    "codepoint": "U+2198",
+    "name": "se pointing arrow",
+    "category": "Arrows",
+    "package": null
+  },
+  {
+    "command": "\\nwarrow",
+    "character": "↖",
+    "codepoint": "U+2196",
+    "name": "nw pointing arrow",
+    "category": "Arrows",
+    "package": null
+  },
+  {
+    "command": "\\swarrow",
+    "character": "↙",
+    "codepoint": "U+2199",
+    "name": "sw pointing arrow",
+    "category": "Arrows",
+    "package": null
+  },
+  {
+    "command": "\\Leftrightarrow",
+    "character": "⇔",
+    "codepoint": "U+21D4",
+    "name": "left and right double arrow",
+    "category": "Arrows",
+    "package": null
+  },
+  {
+    "command": "\\Leftarrow",
+    "character": "⇐",
+    "codepoint": "U+21D0",
+    "name": "is implied by",
+    "category": "Arrows",
+    "package": null
+  },
+  {
+    "command": "\\Rightarrow",
+    "character": "⇒",
+    "codepoint": "U+21D2",
+    "name": "implies",
+    "category": "Arrows",
+    "package": null
+  },
+  {
+    "command": "\\leq",
+    "character": "≤",
+    "codepoint": "U+2264",
+    "name": "/leq /le r: less-than-or-equal",
+    "category": "Relations",
+    "package": null
+  },
+  {
+    "command": "\\geq",
+    "character": "≥",
+    "codepoint": "U+2265",
+    "name": "/geq /ge r: greater-than-or-equal",
+    "category": "Relations",
+    "package": null
+  },
+  {
+    "command": "\\succ",
+    "character": "≻",
+    "codepoint": "U+227B",
+    "name": "succeeds",
+    "category": "Relations",
+    "package": null
+  },
+  {
+    "command": "\\prec",
+    "character": "≺",
+    "codepoint": "U+227A",
+    "name": "precedes",
+    "category": "Relations",
+    "package": null
+  },
+  {
+    "command": "\\approx",
+    "character": "≈",
+    "codepoint": "U+2248",
+    "name": "approximate",
+    "category": "Relations",
+    "package": null
+  },
+  {
+    "command": "\\succeq",
+    "character": "⪰",
+    "codepoint": "U+2AB0",
+    "name": "succeeds above single-line equals sign",
+    "category": "Relations",
+    "package": null
+  },
+  {
+    "command": "\\preceq",
+    "character": "⪯",
+    "codepoint": "U+2AAF",
+    "name": "precedes above single-line equals sign",
+    "category": "Relations",
+    "package": null
+  },
+  {
+    "command": "\\supset",
+    "character": "⊃",
+    "codepoint": "U+2283",
+    "name": "superset or implies",
+    "category": "Relations",
+    "package": null
+  },
+  {
+    "command": "\\subset",
+    "character": "⊂",
+    "codepoint": "U+2282",
+    "name": "subset or is implied by",
+    "category": "Relations",
+    "package": null
+  },
+  {
+    "command": "\\supseteq",
+    "character": "⊇",
+    "codepoint": "U+2287",
+    "name": "superset, equals",
+    "category": "Relations",
+    "package": null
+  },
+  {
+    "command": "\\subseteq",
+    "character": "⊆",
+    "codepoint": "U+2286",
+    "name": "subset, equals",
+    "category": "Relations",
+    "package": null
+  },
+  {
+    "command": "\\in",
+    "character": "∈",
+    "codepoint": "U+2208",
+    "name": "set membership, variant",
+    "category": "Relations",
+    "package": null
+  },
+  {
+    "command": "\\ni",
+    "character": "∋",
+    "codepoint": "U+220B",
+    "name": "contains, variant",
+    "category": "Relations",
+    "package": null
+  },
+  {
+    "command": "\\gg",
+    "character": "≫",
+    "codepoint": "U+226B",
+    "name": "much greater than, type 2",
+    "category": "Relations",
+    "package": null
+  },
+  {
+    "command": "\\ll",
+    "character": "≪",
+    "codepoint": "U+226A",
+    "name": "much less than, type 2",
+    "category": "Relations",
+    "package": null
+  },
+  {
+    "command": "\\leftrightarrow",
+    "character": "↔",
+    "codepoint": "U+2194",
+    "name": "left and right arrow",
+    "category": "Arrows",
+    "package": null
+  },
+  {
+    "command": "\\leftarrow",
+    "character": "←",
+    "codepoint": "U+2190",
+    "name": "/leftarrow /gets a: leftward arrow",
+    "category": "Arrows",
+    "package": null
+  },
+  {
+    "command": "\\rightarrow",
+    "character": "→",
+    "codepoint": "U+2192",
+    "name": "/rightarrow /to a: rightward arrow",
+    "category": "Arrows",
+    "package": null
+  },
+  {
+    "command": "\\sim",
+    "character": "∼",
+    "codepoint": "U+223C",
+    "name": "similar",
+    "category": "Relations",
+    "package": null
+  },
+  {
+    "command": "\\simeq",
+    "character": "≃",
+    "codepoint": "U+2243",
+    "name": "similar, equals",
+    "category": "Relations",
+    "package": null
+  },
+  {
+    "command": "\\perp",
+    "character": "⟂",
+    "codepoint": "U+27C2",
+    "name": "perpendicular",
+    "category": "Relations",
+    "package": null
+  },
+  {
+    "command": "\\equiv",
+    "character": "≡",
+    "codepoint": "U+2261",
+    "name": "identical with",
+    "category": "Relations",
+    "package": null
+  },
+  {
+    "command": "\\asymp",
+    "character": "≍",
+    "codepoint": "U+224D",
+    "name": "asymptotically equal to",
+    "category": "Relations",
+    "package": null
+  },
+  {
+    "command": "\\smile",
+    "character": "⌣",
+    "codepoint": "U+2323",
+    "name": "up curve",
+    "category": "Relations",
+    "package": null
+  },
+  {
+    "command": "\\frown",
+    "character": "⌢",
+    "codepoint": "U+2322",
+    "name": "down curve",
+    "category": "Relations",
+    "package": null
+  },
+  {
+    "command": "\\leftharpoonup",
+    "character": "↼",
+    "codepoint": "U+21BC",
+    "name": "left harpoon-up",
+    "category": "Arrows",
+    "package": null
+  },
+  {
+    "command": "\\leftharpoondown",
+    "character": "↽",
+    "codepoint": "U+21BD",
+    "name": "left harpoon-down",
+    "category": "Arrows",
+    "package": null
+  },
+  {
+    "command": "\\rightharpoonup",
+    "character": "⇀",
+    "codepoint": "U+21C0",
+    "name": "right harpoon-up",
+    "category": "Arrows",
+    "package": null
+  },
+  {
+    "command": "\\rightharpoondown",
+    "character": "⇁",
+    "codepoint": "U+21C1",
+    "name": "right harpoon-down",
+    "category": "Arrows",
+    "package": null
+  },
+  {
+    "command": "\\cdotp",
+    "character": "·",
+    "codepoint": "U+00B7",
+    "name": "/centerdot b: middle dot",
+    "category": "Misc",
+    "package": null
+  },
+  {
+    "command": "\\mathparagraph",
+    "character": "¶",
+    "codepoint": "U+00B6",
+    "name": "paragraph symbol",
+    "category": "Misc",
+    "package": null
+  },
+  {
+    "command": "\\mathsection",
+    "character": "§",
+    "codepoint": "U+00A7",
+    "name": "section symbol",
+    "category": "Misc",
+    "package": null
+  },
+  {
+    "command": "\\mathdollar",
+    "character": "$",
+    "codepoint": "U+0024",
+    "name": "dollar sign",
+    "category": "Misc",
+    "package": null
+  },
+  {
+    "command": "\\boxdot",
+    "character": "⊡",
+    "codepoint": "U+22A1",
+    "name": "/dotsquare /boxdot b: small dot in box",
+    "category": "Operators",
+    "package": "amssymb"
+  },
+  {
+    "command": "\\boxplus",
+    "character": "⊞",
+    "codepoint": "U+229E",
+    "name": "plus sign in box",
+    "category": "Operators",
+    "package": "amssymb"
+  },
+  {
+    "command": "\\boxtimes",
+    "character": "⊠",
+    "codepoint": "U+22A0",
+    "name": "multiply sign in box",
+    "category": "Operators",
+    "package": "amssymb"
+  },
+  {
+    "command": "\\rightleftharpoons",
+    "character": "⇌",
+    "codepoint": "U+21CC",
+    "name": "right harpoon over left",
+    "category": "Arrows",
+    "package": "amssymb"
+  },
+  {
+    "command": "\\leftrightharpoons",
+    "character": "⇋",
+    "codepoint": "U+21CB",
+    "name": "left harpoon over right",
+    "category": "Arrows",
+    "package": "amssymb"
+  },
+  {
+    "command": "\\boxminus",
+    "character": "⊟",
+    "codepoint": "U+229F",
+    "name": "minus sign in box",
+    "category": "Operators",
+    "package": "amssymb"
+  },
+  {
+    "command": "\\Vdash",
+    "character": "⊩",
+    "codepoint": "U+22A9",
+    "name": "double vertical, dash",
+    "category": "Relations",
+    "package": "amssymb"
+  },
+  {
+    "command": "\\Vvdash",
+    "character": "⊪",
+    "codepoint": "U+22AA",
+    "name": "triple vertical, dash",
+    "category": "Relations",
+    "package": "amssymb"
+  },
+  {
+    "command": "\\vDash",
+    "character": "⊨",
+    "codepoint": "U+22A8",
+    "name": "vertical, double dash",
+    "category": "Relations",
+    "package": "amssymb"
+  },
+  {
+    "command": "\\twoheadrightarrow",
+    "character": "↠",
+    "codepoint": "U+21A0",
+    "name": "right two-headed arrow",
+    "category": "Arrows",
+    "package": "amssymb"
+  },
+  {
+    "command": "\\twoheadleftarrow",
+    "character": "↞",
+    "codepoint": "U+219E",
+    "name": "left two-headed arrow",
+    "category": "Arrows",
+    "package": "amssymb"
+  },
+  {
+    "command": "\\leftleftarrows",
+    "character": "⇇",
+    "codepoint": "U+21C7",
+    "name": "two left arrows",
+    "category": "Arrows",
+    "package": "amssymb"
+  },
+  {
+    "command": "\\rightrightarrows",
+    "character": "⇉",
+    "codepoint": "U+21C9",
+    "name": "two right arrows",
+    "category": "Arrows",
+    "package": "amssymb"
+  },
+  {
+    "command": "\\upuparrows",
+    "character": "⇈",
+    "codepoint": "U+21C8",
+    "name": "two up arrows",
+    "category": "Arrows",
+    "package": "amssymb"
+  },
+  {
+    "command": "\\downdownarrows",
+    "character": "⇊",
+    "codepoint": "U+21CA",
+    "name": "two down arrows",
+    "category": "Arrows",
+    "package": "amssymb"
+  },
+  {
+    "command": "\\upharpoonright",
+    "character": "↾",
+    "codepoint": "U+21BE",
+    "name": "/upharpoonright /restriction a: up harpoon-right",
+    "category": "Arrows",
+    "package": "amssymb"
+  },
+  {
+    "command": "\\downharpoonright",
+    "character": "⇂",
+    "codepoint": "U+21C2",
+    "name": "down harpoon-right",
+    "category": "Arrows",
+    "package": "amssymb"
+  },
+  {
+    "command": "\\upharpoonleft",
+    "character": "↿",
+    "codepoint": "U+21BF",
+    "name": "up harpoon-left",
+    "category": "Arrows",
+    "package": "amssymb"
+  },
+  {
+    "command": "\\downharpoonleft",
+    "character": "⇃",
+    "codepoint": "U+21C3",
+    "name": "down harpoon-left",
+    "category": "Arrows",
+    "package": "amssymb"
+  },
+  {
+    "command": "\\rightarrowtail",
+    "character": "↣",
+    "codepoint": "U+21A3",
+    "name": "right arrow-tailed",
+    "category": "Arrows",
+    "package": "amssymb"
+  },
+  {
+    "command": "\\leftarrowtail",
+    "character": "↢",
+    "codepoint": "U+21A2",
+    "name": "left arrow-tailed",
+    "category": "Arrows",
+    "package": "amssymb"
+  },
+  {
+    "command": "\\leftrightarrows",
+    "character": "⇆",
+    "codepoint": "U+21C6",
+    "name": "left arrow over right arrow",
+    "category": "Arrows",
+    "package": "amssymb"
+  },
+  {
+    "command": "\\rightleftarrows",
+    "character": "⇄",
+    "codepoint": "U+21C4",
+    "name": "right arrow over left arrow",
+    "category": "Arrows",
+    "package": "amssymb"
+  },
+  {
+    "command": "\\Lsh",
+    "character": "↰",
+    "codepoint": "U+21B0",
+    "name": "/lsh a:",
+    "category": "Relations",
+    "package": "amssymb"
+  },
+  {
+    "command": "\\Rsh",
+    "character": "↱",
+    "codepoint": "U+21B1",
+    "name": "/rsh a:",
+    "category": "Relations",
+    "package": "amssymb"
+  },
+  {
+    "command": "\\rightsquigarrow",
+    "character": "⇝",
+    "codepoint": "U+21DD",
+    "name": "rightwards squiggle arrow",
+    "category": "Arrows",
+    "package": "amssymb"
+  },
+  {
+    "command": "\\leftrightsquigarrow",
+    "character": "↭",
+    "codepoint": "U+21AD",
+    "name": "left and right arr-wavy",
+    "category": "Arrows",
+    "package": "amssymb"
+  },
+  {
+    "command": "\\looparrowleft",
+    "character": "↫",
+    "codepoint": "U+21AB",
+    "name": "left arrow-looped",
+    "category": "Arrows",
+    "package": "amssymb"
+  },
+  {
+    "command": "\\looparrowright",
+    "character": "↬",
+    "codepoint": "U+21AC",
+    "name": "right arrow-looped",
+    "category": "Arrows",
+    "package": "amssymb"
+  },
+  {
+    "command": "\\circeq",
+    "character": "≗",
+    "codepoint": "U+2257",
+    "name": "circle, equals",
+    "category": "Relations",
+    "package": "amssymb"
+  },
+  {
+    "command": "\\succsim",
+    "character": "≿",
+    "codepoint": "U+227F",
+    "name": "succeeds, similar",
+    "category": "Relations",
+    "package": "amssymb"
+  },
+  {
+    "command": "\\gtrsim",
+    "character": "≳",
+    "codepoint": "U+2273",
+    "name": "greater, similar",
+    "category": "Relations",
+    "package": "amssymb"
+  },
+  {
+    "command": "\\gtrapprox",
+    "character": "⪆",
+    "codepoint": "U+2A86",
+    "name": "greater-than or approximate",
+    "category": "Relations",
+    "package": "amssymb"
+  },
+  {
+    "command": "\\multimap",
+    "character": "⊸",
+    "codepoint": "U+22B8",
+    "name": "/multimap a:",
+    "category": "Relations",
+    "package": "amssymb"
+  },
+  {
+    "command": "\\therefore",
+    "character": "∴",
+    "codepoint": "U+2234",
+    "name": "therefore",
+    "category": "Relations",
+    "package": "amssymb"
+  },
+  {
+    "command": "\\because",
+    "character": "∵",
+    "codepoint": "U+2235",
+    "name": "because",
+    "category": "Relations",
+    "package": "amssymb"
+  },
+  {
+    "command": "\\triangleq",
+    "character": "≜",
+    "codepoint": "U+225C",
+    "name": "triangle, equals",
+    "category": "Relations",
+    "package": "amssymb"
+  },
+  {
+    "command": "\\precsim",
+    "character": "≾",
+    "codepoint": "U+227E",
+    "name": "precedes, similar",
+    "category": "Relations",
+    "package": "amssymb"
+  },
+  {
+    "command": "\\lesssim",
+    "character": "≲",
+    "codepoint": "U+2272",
+    "name": "less, similar",
+    "category": "Relations",
+    "package": "amssymb"
+  },
+  {
+    "command": "\\lessapprox",
+    "character": "⪅",
+    "codepoint": "U+2A85",
+    "name": "less-than or approximate",
+    "category": "Relations",
+    "package": "amssymb"
+  },
+  {
+    "command": "\\eqslantless",
+    "character": "⪕",
+    "codepoint": "U+2A95",
+    "name": "slanted equal to or less-than",
+    "category": "Relations",
+    "package": "amssymb"
+  },
+  {
+    "command": "\\eqslantgtr",
+    "character": "⪖",
+    "codepoint": "U+2A96",
+    "name": "slanted equal to or greater-than",
+    "category": "Relations",
+    "package": "amssymb"
+  },
+  {
+    "command": "\\curlyeqprec",
+    "character": "⋞",
+    "codepoint": "U+22DE",
+    "name": "curly equals, precedes",
+    "category": "Relations",
+    "package": "amssymb"
+  },
+  {
+    "command": "\\curlyeqsucc",
+    "character": "⋟",
+    "codepoint": "U+22DF",
+    "name": "curly equals, succeeds",
+    "category": "Relations",
+    "package": "amssymb"
+  },
+  {
+    "command": "\\preccurlyeq",
+    "character": "≼",
+    "codepoint": "U+227C",
+    "name": "precedes, curly equals",
+    "category": "Relations",
+    "package": "amssymb"
+  },
+  {
+    "command": "\\leqq",
+    "character": "≦",
+    "codepoint": "U+2266",
+    "name": "less, double equals",
+    "category": "Relations",
+    "package": "amssymb"
+  },
+  {
+    "command": "\\leqslant",
+    "character": "⩽",
+    "codepoint": "U+2A7D",
+    "name": "less-than or slanted equal to",
+    "category": "Relations",
+    "package": "amssymb"
+  },
+  {
+    "command": "\\lessgtr",
+    "character": "≶",
+    "codepoint": "U+2276",
+    "name": "less, greater",
+    "category": "Relations",
+    "package": "amssymb"
+  },
+  {
+    "command": "\\backprime",
+    "character": "‵",
+    "codepoint": "U+2035",
+    "name": "reverse prime, not superscripted",
+    "category": "Misc",
+    "package": "amssymb"
+  },
+  {
+    "command": "\\risingdotseq",
+    "character": "≓",
+    "codepoint": "U+2253",
+    "name": "equals, rising dots",
+    "category": "Relations",
+    "package": "amssymb"
+  },
+  {
+    "command": "\\fallingdotseq",
+    "character": "≒",
+    "codepoint": "U+2252",
+    "name": "equals, falling dots",
+    "category": "Relations",
+    "package": "amssymb"
+  },
+  {
+    "command": "\\succcurlyeq",
+    "character": "≽",
+    "codepoint": "U+227D",
+    "name": "succeeds, curly equals",
+    "category": "Relations",
+    "package": "amssymb"
+  },
+  {
+    "command": "\\geqq",
+    "character": "≧",
+    "codepoint": "U+2267",
+    "name": "greater, double equals",
+    "category": "Relations",
+    "package": "amssymb"
+  },
+  {
+    "command": "\\geqslant",
+    "character": "⩾",
+    "codepoint": "U+2A7E",
+    "name": "greater-than or slanted equal to",
+    "category": "Relations",
+    "package": "amssymb"
+  },
+  {
+    "command": "\\gtrless",
+    "character": "≷",
+    "codepoint": "U+2277",
+    "name": "greater, less",
+    "category": "Relations",
+    "package": "amssymb"
+  },
+  {
+    "command": "\\sqsubset",
+    "character": "⊏",
+    "codepoint": "U+228F",
+    "name": "square subset",
+    "category": "Relations",
+    "package": "amssymb"
+  },
+  {
+    "command": "\\sqsupset",
+    "character": "⊐",
+    "codepoint": "U+2290",
+    "name": "square superset",
+    "category": "Relations",
+    "package": "amssymb"
+  },
+  {
+    "command": "\\vartriangleright",
+    "character": "⊳",
+    "codepoint": "U+22B3",
+    "name": "right triangle, open, variant",
+    "category": "Relations",
+    "package": "amssymb"
+  },
+  {
+    "command": "\\vartriangleleft",
+    "character": "⊲",
+    "codepoint": "U+22B2",
+    "name": "left triangle, open, variant",
+    "category": "Relations",
+    "package": "amssymb"
+  },
+  {
+    "command": "\\trianglerighteq",
+    "character": "⊵",
+    "codepoint": "U+22B5",
+    "name": "right triangle, equals",
+    "category": "Relations",
+    "package": "amssymb"
+  },
+  {
+    "command": "\\trianglelefteq",
+    "character": "⊴",
+    "codepoint": "U+22B4",
+    "name": "left triangle, equals",
+    "category": "Relations",
+    "package": "amssymb"
+  },
+  {
+    "command": "\\bigstar",
+    "character": "★",
+    "codepoint": "U+2605",
+    "name": "star, filled",
+    "category": "Misc",
+    "package": "amssymb"
+  },
+  {
+    "command": "\\between",
+    "character": "≬",
+    "codepoint": "U+226C",
+    "name": "between",
+    "category": "Relations",
+    "package": "amssymb"
+  },
+  {
+    "command": "\\blacktriangledown",
+    "character": "▾",
+    "codepoint": "U+25BE",
+    "name": "down triangle, filled",
+    "category": "Misc",
+    "package": "amssymb"
+  },
+  {
+    "command": "\\blacktriangleright",
+    "character": "▶",
+    "codepoint": "U+25B6",
+    "name": "(large) right triangle, filled",
+    "category": "Relations",
+    "package": "amssymb"
+  },
+  {
+    "command": "\\blacktriangleleft",
+    "character": "◀",
+    "codepoint": "U+25C0",
+    "name": "(large) left triangle, filled",
+    "category": "Relations",
+    "package": "amssymb"
+  },
+  {
+    "command": "\\vartriangle",
+    "character": "▵",
+    "codepoint": "U+25B5",
+    "name": "/triangle - up triangle, open",
+    "category": "Relations",
+    "package": "amssymb"
+  },
+  {
+    "command": "\\blacktriangle",
+    "character": "▴",
+    "codepoint": "U+25B4",
+    "name": "up triangle, filled",
+    "category": "Misc",
+    "package": "amssymb"
+  },
+  {
+    "command": "\\triangledown",
+    "character": "▿",
+    "codepoint": "U+25BF",
+    "name": "down triangle, open",
+    "category": "Misc",
+    "package": "amssymb"
+  },
+  {
+    "command": "\\eqcirc",
+    "character": "≖",
+    "codepoint": "U+2256",
+    "name": "circle on equals sign",
+    "category": "Relations",
+    "package": "amssymb"
+  },
+  {
+    "command": "\\lesseqgtr",
+    "character": "⋚",
+    "codepoint": "U+22DA",
+    "name": "less, equals, greater",
+    "category": "Relations",
+    "package": "amssymb"
+  },
+  {
+    "command": "\\gtreqless",
+    "character": "⋛",
+    "codepoint": "U+22DB",
+    "name": "greater, equals, less",
+    "category": "Relations",
+    "package": "amssymb"
+  },
+  {
+    "command": "\\lesseqqgtr",
+    "character": "⪋",
+    "codepoint": "U+2A8B",
+    "name": "less-than above double-line equal above greater-than",
+    "category": "Relations",
+    "package": "amssymb"
+  },
+  {
+    "command": "\\gtreqqless",
+    "character": "⪌",
+    "codepoint": "U+2A8C",
+    "name": "greater-than above double-line equal above less-than",
+    "category": "Relations",
+    "package": "amssymb"
+  },
+  {
+    "command": "\\Rrightarrow",
+    "character": "⇛",
+    "codepoint": "U+21DB",
+    "name": "right triple arrow",
+    "category": "Arrows",
+    "package": "amssymb"
+  },
+  {
+    "command": "\\Lleftarrow",
+    "character": "⇚",
+    "codepoint": "U+21DA",
+    "name": "left triple arrow",
+    "category": "Arrows",
+    "package": "amssymb"
+  },
+  {
+    "command": "\\veebar",
+    "character": "⊻",
+    "codepoint": "U+22BB",
+    "name": "logical or, bar below (large vee); exclusive disjunction",
+    "category": "Operators",
+    "package": "amssymb"
+  },
+  {
+    "command": "\\barwedge",
+    "character": "⊼",
+    "codepoint": "U+22BC",
+    "name": "bar, wedge (large wedge)",
+    "category": "Operators",
+    "package": "amssymb"
+  },
+  {
+    "command": "\\doublebarwedge",
+    "character": "⩞",
+    "codepoint": "U+2A5E",
+    "name": "logical and with double overbar",
+    "category": "Operators",
+    "package": "amssymb"
+  },
+  {
+    "command": "\\angle",
+    "character": "∠",
+    "codepoint": "U+2220",
+    "name": "angle",
+    "category": "Misc",
+    "package": "amssymb"
+  },
+  {
+    "command": "\\measuredangle",
+    "character": "∡",
+    "codepoint": "U+2221",
+    "name": "angle-measured",
+    "category": "Misc",
+    "package": "amssymb"
+  },
+  {
+    "command": "\\sphericalangle",
+    "character": "∢",
+    "codepoint": "U+2222",
+    "name": "angle-spherical",
+    "category": "Misc",
+    "package": "amssymb"
+  },
+  {
+    "command": "\\Subset",
+    "character": "⋐",
+    "codepoint": "U+22D0",
+    "name": "double subset",
+    "category": "Relations",
+    "package": "amssymb"
+  },
+  {
+    "command": "\\Supset",
+    "character": "⋑",
+    "codepoint": "U+22D1",
+    "name": "double superset",
+    "category": "Relations",
+    "package": "amssymb"
+  },
+  {
+    "command": "\\Cup",
+    "character": "⋓",
+    "codepoint": "U+22D3",
+    "name": "/cup /doublecup b: double union",
+    "category": "Operators",
+    "package": "amssymb"
+  },
+  {
+    "command": "\\Cap",
+    "character": "⋒",
+    "codepoint": "U+22D2",
+    "name": "/cap /doublecap b: double intersection",
+    "category": "Operators",
+    "package": "amssymb"
+  },
+  {
+    "command": "\\curlywedge",
+    "character": "⋏",
+    "codepoint": "U+22CF",
+    "name": "curly logical and",
+    "category": "Operators",
+    "package": "amssymb"
+  },
+  {
+    "command": "\\curlyvee",
+    "character": "⋎",
+    "codepoint": "U+22CE",
+    "name": "curly logical or",
+    "category": "Operators",
+    "package": "amssymb"
+  },
+  {
+    "command": "\\leftthreetimes",
+    "character": "⋋",
+    "codepoint": "U+22CB",
+    "name": "left semidirect product",
+    "category": "Operators",
+    "package": "amssymb"
+  },
+  {
+    "command": "\\rightthreetimes",
+    "character": "⋌",
+    "codepoint": "U+22CC",
+    "name": "right semidirect product",
+    "category": "Operators",
+    "package": "amssymb"
+  },
+  {
+    "command": "\\subseteqq",
+    "character": "⫅",
+    "codepoint": "U+2AC5",
+    "name": "subset of above equals sign",
+    "category": "Relations",
+    "package": "amssymb"
+  },
+  {
+    "command": "\\supseteqq",
+    "character": "⫆",
+    "codepoint": "U+2AC6",
+    "name": "superset of above equals sign",
+    "category": "Relations",
+    "package": "amssymb"
+  },
+  {
+    "command": "\\bumpeq",
+    "character": "≏",
+    "codepoint": "U+224F",
+    "name": "bumpy equals, equals",
+    "category": "Relations",
+    "package": "amssymb"
+  },
+  {
+    "command": "\\Bumpeq",
+    "character": "≎",
+    "codepoint": "U+224E",
+    "name": "bumpy equals",
+    "category": "Relations",
+    "package": "amssymb"
+  },
+  {
+    "command": "\\lll",
+    "character": "⋘",
+    "codepoint": "U+22D8",
+    "name": "/ll /lll /llless r: triple less-than",
+    "category": "Relations",
+    "package": "amssymb"
+  },
+  {
+    "command": "\\ggg",
+    "character": "⋙",
+    "codepoint": "U+22D9",
+    "name": "/ggg /gg /gggtr r: triple greater-than",
+    "category": "Relations",
+    "package": "amssymb"
+  },
+  {
+    "command": "\\pitchfork",
+    "character": "⋔",
+    "codepoint": "U+22D4",
+    "name": "pitchfork",
+    "category": "Relations",
+    "package": "amssymb"
+  },
+  {
+    "command": "\\dotplus",
+    "character": "∔",
+    "codepoint": "U+2214",
+    "name": "plus sign, dot above",
+    "category": "Operators",
+    "package": "amssymb"
+  },
+  {
+    "command": "\\backsim",
+    "character": "∽",
+    "codepoint": "U+223D",
+    "name": "reverse similar",
+    "category": "Relations",
+    "package": "amssymb"
+  },
+  {
+    "command": "\\backsimeq",
+    "character": "⋍",
+    "codepoint": "U+22CD",
+    "name": "reverse similar, equals",
+    "category": "Relations",
+    "package": "amssymb"
+  },
+  {
+    "command": "\\complement",
+    "character": "∁",
+    "codepoint": "U+2201",
+    "name": "complement sign",
+    "category": "Misc",
+    "package": "amssymb"
+  },
+  {
+    "command": "\\intercal",
+    "character": "⊺",
+    "codepoint": "U+22BA",
+    "name": "intercal",
+    "category": "Operators",
+    "package": "amssymb"
+  },
+  {
+    "command": "\\circledcirc",
+    "character": "⊚",
+    "codepoint": "U+229A",
+    "name": "small circle in circle",
+    "category": "Operators",
+    "package": "amssymb"
+  },
+  {
+    "command": "\\circledast",
+    "character": "⊛",
+    "codepoint": "U+229B",
+    "name": "asterisk in circle",
+    "category": "Operators",
+    "package": "amssymb"
+  },
+  {
+    "command": "\\circleddash",
+    "character": "⊝",
+    "codepoint": "U+229D",
+    "name": "hyphen in circle",
+    "category": "Operators",
+    "package": "amssymb"
+  },
+  {
+    "command": "\\nleq",
+    "character": "≰",
+    "codepoint": "U+2270",
+    "name": "not less-than-or-equal",
+    "category": "Relations",
+    "package": "amssymb"
+  },
+  {
+    "command": "\\ngeq",
+    "character": "≱",
+    "codepoint": "U+2271",
+    "name": "not greater-than-or-equal",
+    "category": "Relations",
+    "package": "amssymb"
+  },
+  {
+    "command": "\\nless",
+    "character": "≮",
+    "codepoint": "U+226E",
+    "name": "not less-than",
+    "category": "Relations",
+    "package": "amssymb"
+  },
+  {
+    "command": "\\ngtr",
+    "character": "≯",
+    "codepoint": "U+226F",
+    "name": "not greater-than",
+    "category": "Relations",
+    "package": "amssymb"
+  },
+  {
+    "command": "\\nprec",
+    "character": "⊀",
+    "codepoint": "U+2280",
+    "name": "not precedes",
+    "category": "Relations",
+    "package": "amssymb"
+  },
+  {
+    "command": "\\nsucc",
+    "character": "⊁",
+    "codepoint": "U+2281",
+    "name": "not succeeds",
+    "category": "Relations",
+    "package": "amssymb"
+  },
+  {
+    "command": "\\lneqq",
+    "character": "≨",
+    "codepoint": "U+2268",
+    "name": "less, not double equals",
+    "category": "Relations",
+    "package": "amssymb"
+  },
+  {
+    "command": "\\gneqq",
+    "character": "≩",
+    "codepoint": "U+2269",
+    "name": "greater, not double equals",
+    "category": "Relations",
+    "package": "amssymb"
+  },
+  {
+    "command": "\\lneq",
+    "character": "⪇",
+    "codepoint": "U+2A87",
+    "name": "less-than and single-line not equal to",
+    "category": "Relations",
+    "package": "amssymb"
+  },
+  {
+    "command": "\\gneq",
+    "character": "⪈",
+    "codepoint": "U+2A88",
+    "name": "greater-than and single-line not equal to",
+    "category": "Relations",
+    "package": "amssymb"
+  },
+  {
+    "command": "\\precnsim",
+    "character": "⋨",
+    "codepoint": "U+22E8",
+    "name": "precedes, not similar",
+    "category": "Relations",
+    "package": "amssymb"
+  },
+  {
+    "command": "\\succnsim",
+    "character": "⋩",
+    "codepoint": "U+22E9",
+    "name": "succeeds, not similar",
+    "category": "Relations",
+    "package": "amssymb"
+  },
+  {
+    "command": "\\lnsim",
+    "character": "⋦",
+    "codepoint": "U+22E6",
+    "name": "less, not similar",
+    "category": "Relations",
+    "package": "amssymb"
+  },
+  {
+    "command": "\\gnsim",
+    "character": "⋧",
+    "codepoint": "U+22E7",
+    "name": "greater, not similar",
+    "category": "Relations",
+    "package": "amssymb"
+  },
+  {
+    "command": "\\precneqq",
+    "character": "⪵",
+    "codepoint": "U+2AB5",
+    "name": "precedes above not equal to",
+    "category": "Relations",
+    "package": "amssymb"
+  },
+  {
+    "command": "\\succneqq",
+    "character": "⪶",
+    "codepoint": "U+2AB6",
+    "name": "succeeds above not equal to",
+    "category": "Relations",
+    "package": "amssymb"
+  },
+  {
+    "command": "\\precnapprox",
+    "character": "⪹",
+    "codepoint": "U+2AB9",
+    "name": "precedes above not almost equal to",
+    "category": "Relations",
+    "package": "amssymb"
+  },
+  {
+    "command": "\\succnapprox",
+    "character": "⪺",
+    "codepoint": "U+2ABA",
+    "name": "succeeds above not almost equal to",
+    "category": "Relations",
+    "package": "amssymb"
+  },
+  {
+    "command": "\\lnapprox",
+    "character": "⪉",
+    "codepoint": "U+2A89",
+    "name": "less-than and not approximate",
+    "category": "Relations",
+    "package": "amssymb"
+  },
+  {
+    "command": "\\gnapprox",
+    "character": "⪊",
+    "codepoint": "U+2A8A",
+    "name": "greater-than and not approximate",
+    "category": "Relations",
+    "package": "amssymb"
+  },
+  {
+    "command": "\\nsim",
+    "character": "≁",
+    "codepoint": "U+2241",
+    "name": "not similar",
+    "category": "Relations",
+    "package": "amssymb"
+  },
+  {
+    "command": "\\ncong",
+    "character": "≇",
+    "codepoint": "U+2247",
+    "name": "not congruent with",
+    "category": "Relations",
+    "package": "amssymb"
+  },
+  {
+    "command": "\\diagup",
+    "character": "⟋",
+    "codepoint": "U+27CB",
+    "name": "mathematical rising diagonal",
+    "category": "Misc",
+    "package": "amssymb"
+  },
+  {
+    "command": "\\diagdown",
+    "character": "⟍",
+    "codepoint": "U+27CD",
+    "name": "mathematical falling diagonal",
+    "category": "Misc",
+    "package": "amssymb"
+  },
+  {
+    "command": "\\subsetneqq",
+    "character": "⫋",
+    "codepoint": "U+2ACB",
+    "name": "subset of above not equal to",
+    "category": "Relations",
+    "package": "amssymb"
+  },
+  {
+    "command": "\\supsetneqq",
+    "character": "⫌",
+    "codepoint": "U+2ACC",
+    "name": "superset of above not equal to",
+    "category": "Relations",
+    "package": "amssymb"
+  },
+  {
+    "command": "\\subsetneq",
+    "character": "⊊",
+    "codepoint": "U+228A",
+    "name": "subset, not equals",
+    "category": "Relations",
+    "package": "amssymb"
+  },
+  {
+    "command": "\\supsetneq",
+    "character": "⊋",
+    "codepoint": "U+228B",
+    "name": "superset, not equals",
+    "category": "Relations",
+    "package": "amssymb"
+  },
+  {
+    "command": "\\nsubseteq",
+    "character": "⊈",
+    "codepoint": "U+2288",
+    "name": "not subset, equals",
+    "category": "Relations",
+    "package": "amssymb"
+  },
+  {
+    "command": "\\nsupseteq",
+    "character": "⊉",
+    "codepoint": "U+2289",
+    "name": "not superset, equals",
+    "category": "Relations",
+    "package": "amssymb"
+  },
+  {
+    "command": "\\nparallel",
+    "character": "∦",
+    "codepoint": "U+2226",
+    "name": "not parallel",
+    "category": "Relations",
+    "package": "amssymb"
+  },
+  {
+    "command": "\\nmid",
+    "character": "∤",
+    "codepoint": "U+2224",
+    "name": "negated mid",
+    "category": "Relations",
+    "package": "amssymb"
+  },
+  {
+    "command": "\\nvdash",
+    "character": "⊬",
+    "codepoint": "U+22AC",
+    "name": "not vertical, dash",
+    "category": "Relations",
+    "package": "amssymb"
+  },
+  {
+    "command": "\\nVdash",
+    "character": "⊮",
+    "codepoint": "U+22AE",
+    "name": "not double vertical, dash",
+    "category": "Relations",
+    "package": "amssymb"
+  },
+  {
+    "command": "\\nvDash",
+    "character": "⊭",
+    "codepoint": "U+22AD",
+    "name": "not vertical, double dash",
+    "category": "Relations",
+    "package": "amssymb"
+  },
+  {
+    "command": "\\nVDash",
+    "character": "⊯",
+    "codepoint": "U+22AF",
+    "name": "not double vert, double dash",
+    "category": "Relations",
+    "package": "amssymb"
+  },
+  {
+    "command": "\\ntrianglerighteq",
+    "character": "⋭",
+    "codepoint": "U+22ED",
+    "name": "not right triangle, equals",
+    "category": "Relations",
+    "package": "amssymb"
+  },
+  {
+    "command": "\\ntrianglelefteq",
+    "character": "⋬",
+    "codepoint": "U+22EC",
+    "name": "not left triangle, equals",
+    "category": "Relations",
+    "package": "amssymb"
+  },
+  {
+    "command": "\\nleftarrow",
+    "character": "↚",
+    "codepoint": "U+219A",
+    "name": "not left arrow",
+    "category": "Arrows",
+    "package": "amssymb"
+  },
+  {
+    "command": "\\nrightarrow",
+    "character": "↛",
+    "codepoint": "U+219B",
+    "name": "not right arrow",
+    "category": "Arrows",
+    "package": "amssymb"
+  },
+  {
+    "command": "\\nLeftarrow",
+    "character": "⇍",
+    "codepoint": "U+21CD",
+    "name": "not implied by",
+    "category": "Arrows",
+    "package": "amssymb"
+  },
+  {
+    "command": "\\nRightarrow",
+    "character": "⇏",
+    "codepoint": "U+21CF",
+    "name": "not implies",
+    "category": "Arrows",
+    "package": "amssymb"
+  },
+  {
+    "command": "\\nLeftrightarrow",
+    "character": "⇎",
+    "codepoint": "U+21CE",
+    "name": "not left and right double arrows",
+    "category": "Arrows",
+    "package": "amssymb"
+  },
+  {
+    "command": "\\nleftrightarrow",
+    "character": "↮",
+    "codepoint": "U+21AE",
+    "name": "not left and right arrow",
+    "category": "Arrows",
+    "package": "amssymb"
+  },
+  {
+    "command": "\\divideontimes",
+    "character": "⋇",
+    "codepoint": "U+22C7",
+    "name": "division on times",
+    "category": "Operators",
+    "package": "amssymb"
+  },
+  {
+    "command": "\\varnothing",
+    "character": "∅",
+    "codepoint": "U+2205",
+    "name": "circle, slash",
+    "category": "Misc",
+    "package": "amssymb"
+  },
+  {
+    "command": "\\nexists",
+    "character": "∄",
+    "codepoint": "U+2204",
+    "name": "negated exists",
+    "category": "Misc",
+    "package": "amssymb"
+  },
+  {
+    "command": "\\Finv",
+    "character": "Ⅎ",
+    "codepoint": "U+2132",
+    "name": "turned capital f",
+    "category": "Misc",
+    "package": "amssymb"
+  },
+  {
+    "command": "\\Game",
+    "character": "⅁",
+    "codepoint": "U+2141",
+    "name": "turned sans-serif capital g",
+    "category": "Misc",
+    "package": "amssymb"
+  },
+  {
+    "command": "\\mho",
+    "character": "℧",
+    "codepoint": "U+2127",
+    "name": "conductance",
+    "category": "Misc",
+    "package": "amssymb"
+  },
+  {
+    "command": "\\eqsim",
+    "character": "≂",
+    "codepoint": "U+2242",
+    "name": "equals, similar",
+    "category": "Relations",
+    "package": "amssymb"
+  },
+  {
+    "command": "\\beth",
+    "character": "ℶ",
+    "codepoint": "U+2136",
+    "name": "beth, hebrew",
+    "category": "Misc",
+    "package": "amssymb"
+  },
+  {
+    "command": "\\gimel",
+    "character": "ℷ",
+    "codepoint": "U+2137",
+    "name": "gimel, hebrew",
+    "category": "Misc",
+    "package": "amssymb"
+  },
+  {
+    "command": "\\daleth",
+    "character": "ℸ",
+    "codepoint": "U+2138",
+    "name": "daleth, hebrew",
+    "category": "Misc",
+    "package": "amssymb"
+  },
+  {
+    "command": "\\lessdot",
+    "character": "⋖",
+    "codepoint": "U+22D6",
+    "name": "less than, with dot",
+    "category": "Operators",
+    "package": "amssymb"
+  },
+  {
+    "command": "\\gtrdot",
+    "character": "⋗",
+    "codepoint": "U+22D7",
+    "name": "greater than, with dot",
+    "category": "Operators",
+    "package": "amssymb"
+  },
+  {
+    "command": "\\ltimes",
+    "character": "⋉",
+    "codepoint": "U+22C9",
+    "name": "times sign, left closed",
+    "category": "Operators",
+    "package": "amssymb"
+  },
+  {
+    "command": "\\rtimes",
+    "character": "⋊",
+    "codepoint": "U+22CA",
+    "name": "times sign, right closed",
+    "category": "Operators",
+    "package": "amssymb"
+  },
+  {
+    "command": "\\approxeq",
+    "character": "≊",
+    "codepoint": "U+224A",
+    "name": "approximate, equals",
+    "category": "Relations",
+    "package": "amssymb"
+  },
+  {
+    "command": "\\succapprox",
+    "character": "⪸",
+    "codepoint": "U+2AB8",
+    "name": "succeeds above almost equal to",
+    "category": "Relations",
+    "package": "amssymb"
+  },
+  {
+    "command": "\\precapprox",
+    "character": "⪷",
+    "codepoint": "U+2AB7",
+    "name": "precedes above almost equal to",
+    "category": "Relations",
+    "package": "amssymb"
+  },
+  {
+    "command": "\\curvearrowleft",
+    "character": "↶",
+    "codepoint": "U+21B6",
+    "name": "left curved arrow",
+    "category": "Arrows",
+    "package": "amssymb"
+  },
+  {
+    "command": "\\curvearrowright",
+    "character": "↷",
+    "codepoint": "U+21B7",
+    "name": "right curved arrow",
+    "category": "Arrows",
+    "package": "amssymb"
+  },
+  {
+    "command": "\\varkappa",
+    "character": "ϰ",
+    "codepoint": "U+03F0",
+    "name": "rounded small kappa, greek",
+    "category": "Greek",
+    "package": "amssymb"
+  },
+  {
+    "command": "\\Bbbk",
+    "character": "𝕜",
+    "codepoint": "U+1D55C",
+    "name": "mathematical double-struck small k",
+    "category": "Misc",
+    "package": "amssymb"
+  },
+  {
+    "command": "\\hslash",
+    "character": "ℏ",
+    "codepoint": "U+210F",
+    "name": "/hslash - variant planck's over 2pi",
+    "category": "Misc",
+    "package": "amssymb"
+  }
+]

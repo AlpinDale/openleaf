@@ -1,0 +1,84 @@
+// Settings window extras, dictionary editor, citation dialog, connection alerts.
+
+.dictionary-add-form {
+  display: flex;
+  gap: var(--spacing-03);
+  padding: var(--spacing-04) var(--spacing-06) 0;
+}
+
+#dictionary-modal .notification-list {
+  padding: var(--spacing-04) var(--spacing-06) 0;
+}
+
+.openleaf-citation-actions {
+  display: flex;
+  justify-content: flex-end;
+  padding: var(--spacing-02) var(--spacing-06) 0;
+}
+
+.openleaf-citation-results {
+  max-height: min(50vh, 420px);
+  overflow-y: auto;
+  margin: var(--spacing-04) 0 0;
+  border: 1px solid var(--border-divider-themed);
+  border-radius: var(--border-radius-base);
+
+  li + li {
+    border-top: 1px solid var(--border-divider-themed);
+  }
+}
+
+.openleaf-citation-result {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0 var(--spacing-04);
+  width: 100%;
+  padding: var(--spacing-03) var(--spacing-04);
+  border: 0;
+  background: none;
+  color: var(--content-primary-themed);
+  text-align: left;
+
+  &:hover,
+  &:focus-visible {
+    background-color: var(--bg-secondary-themed);
+  }
+
+  &.selected {
+    background-color: var(--bg-accent-03);
+  }
+}
+
+.openleaf-citation-key {
+  font-family: $font-family-monospace;
+  font-weight: 600;
+}
+
+.openleaf-citation-meta {
+  color: var(--content-secondary-themed);
+  text-align: right;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.openleaf-citation-title {
+  grid-column: 1 / -1;
+  color: var(--content-secondary-themed);
+  font-size: var(--font-size-02);
+}
+
+.openleaf-citation-bibtex {
+  font-family: $font-family-monospace;
+  font-size: var(--font-size-02);
+}
+
+.openleaf-connection-alerts {
+  position: fixed;
+  top: var(--spacing-10);
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1070;
+  min-width: 400px;
+  max-width: calc(100vw - var(--spacing-08));
+}

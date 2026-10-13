@@ -1,0 +1,1 @@
+ALTER TABLE `projects` ADD `main_bib_doc_id` text;

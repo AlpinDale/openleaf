@@ -1,0 +1,16 @@
+{
+  "name": "@openleaf/e2e",
+  "version": "0.1.0",
+  "private": true,
+  "license": "AGPL-3.0-or-later",
+  "type": "module",
+  "scripts": {
+    "test": "playwright test",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.64.0",
+    "typescript": "^7.0.2",
+    "@types/node": "^22"
+  }
+}

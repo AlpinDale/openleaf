@@ -1,0 +1,22 @@
+{
+  "name": "openleaf",
+  "private": true,
+  "license": "AGPL-3.0-or-later",
+  "type": "module",
+  "packageManager": "pnpm@11.10.0",
+  "engines": {
+    "node": ">=22.18"
+  },
+  "scripts": {
+    "dev": "pnpm -r --parallel --filter \"./apps/*\" dev",
+    "build": "pnpm -r build",
+    "test": "pnpm -r --filter \"!@openleaf/e2e\" test",
+    "typecheck": "pnpm -r typecheck",
+    "lint": "biome check .",
+    "e2e": "pnpm --filter @openleaf/e2e test"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^2.5.15",
+    "typescript": "^7.0.2"
+  }
+}

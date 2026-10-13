@@ -1,0 +1,37 @@
+// Editor shell additions: command palette shortcut hints and disabled entries.
+
+.command-palette .command-palette-result {
+  button {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .command-palette-result-shortcut {
+    flex: none;
+    margin-left: var(--spacing-06);
+    font-size: var(--font-size-01);
+    color: var(--content-placeholder-themed);
+  }
+
+  &.command-palette-result-disabled button {
+    cursor: default;
+    opacity: 0.5;
+  }
+}
+
+// Help and Settings at the bottom of the rail, as in Overleaf.
+.ide-rail .ide-rail-actions {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-02);
+}
+
+// Home button and menu bar; hidden (but mounted) in focus mode.
+.openleaf-toolbar-chrome {
+  display: contents;
+
+  &[hidden] {
+    display: none;
+  }
+}

@@ -1,0 +1,92 @@
+{
+  "$schema": "https://biomejs.dev/schemas/2.5.15/schema.json",
+  "vcs": {
+    "enabled": true,
+    "clientKind": "git",
+    "useIgnoreFile": true
+  },
+  "files": {
+    "includes": [
+      "**",
+      "!**/node_modules",
+      "!**/dist",
+      "!apps/server/data",
+      "!**/*.generated.*",
+      "!apps/web/src/features/source-editor/hunspell/wasm",
+      "!apps/web/src/features/symbol-palette/symbols.json",
+      "!apps/web/src/features/metadata/package-mapping.ts",
+      "!apps/server/drizzle/meta",
+      "!apps/web/src/fonts",
+      "!e2e/test-results",
+      "!e2e/playwright-report"
+    ]
+  },
+  "formatter": {
+    "enabled": true,
+    "indentStyle": "space",
+    "indentWidth": 2,
+    "lineWidth": 80
+  },
+  "javascript": {
+    "formatter": {
+      "quoteStyle": "single",
+      "jsxQuoteStyle": "double",
+      "semicolons": "asNeeded",
+      "trailingCommas": "es5",
+      "arrowParentheses": "asNeeded"
+    }
+  },
+  "css": {
+    "parser": {
+      "cssModules": false
+    }
+  },
+  "linter": {
+    "enabled": true,
+    "rules": {
+      "preset": "recommended"
+    }
+  },
+  "assist": {
+    "enabled": true
+  },
+  "overrides": [
+    {
+      "includes": ["apps/web/src/**"],
+      "linter": {
+        "rules": {
+          "suspicious": {
+            "noExplicitAny": "off"
+          },
+          "style": {
+            "noNonNullAssertion": "off"
+          }
+        }
+      }
+    },
+    {
+      "includes": [
+        "apps/web/src/features/source-editor/**",
+        "apps/web/src/features/outline/**",
+        "apps/web/src/features/mathjax/**",
+        "apps/web/src/ide/**",
+        "apps/web/src/shared/components/**",
+        "apps/web/src/shared/utils/**",
+        "apps/web/src/features/utils/**",
+        "apps/web/src/features/dictionary/**",
+        "apps/web/src/features/file-tree/util/**",
+        "apps/web/src/features/pdf-preview/util/**",
+        "apps/web/src/stylesheets/**",
+        "apps/web/test/features/**",
+        "apps/web/test/ide/**",
+        "**/*.mjs"
+      ],
+      "linter": {
+        "enabled": false
+      },
+      "assist": {
+        "enabled": false
+      }
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+packages:
+  - apps/*
+  - packages/*
+  - e2e
+allowBuilds:
+  better-sqlite3: true
+  esbuild: true
+  '@parcel/watcher': true
+  sass-embedded: true
+minimumReleaseAgeExclude:
+  - zod@4.6.6
+  - react-arborist@4.0.1
+# drizzle-kit's legacy TypeScript loader still pulls a vulnerable esbuild.
+overrides:
+  '@esbuild-kit/core-utils>esbuild': '0.25.12'

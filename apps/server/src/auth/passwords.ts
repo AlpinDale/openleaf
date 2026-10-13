@@ -1,0 +1,15 @@
+import { hash, verify } from '@node-rs/argon2'
+
+// @node-rs/argon2 defaults to argon2id.
+export const hashPassword = (password: string) => hash(password)
+
+export async function verifyPassword(
+  passwordHash: string,
+  password: string
+): Promise<boolean> {
+  try {
+    return await verify(passwordHash, password)
+  } catch {
+    return false
+  }
+}

@@ -1,0 +1,270 @@
+// Comments and track changes (plan M7)
+
+// highlights in the editor
+.cm-editor {
+  .ol-comment {
+    background-color: rgba(243, 177, 17, 0.25);
+    border-bottom: 2px solid rgba(243, 177, 17, 0.6);
+  }
+
+  .ol-comment-focused {
+    background-color: rgba(243, 177, 17, 0.5);
+  }
+
+  .ol-comment-marker {
+    display: inline-block;
+    width: 6px;
+    height: 1em;
+    margin: 0 1px;
+    vertical-align: text-bottom;
+    border-radius: 2px;
+    background-color: rgba(243, 177, 17, 0.7);
+  }
+
+  .ol-comment-marker-focused {
+    background-color: rgb(243, 177, 17);
+  }
+
+  .ol-tc-insert {
+    background-color: hsl(var(--tc-hue) 70% 50% / 0.25);
+    border-bottom: 1px solid hsl(var(--tc-hue) 70% 40%);
+  }
+
+  .ol-tc-insert-focused {
+    background-color: hsl(var(--tc-hue) 70% 50% / 0.45);
+    border-bottom-width: 2px;
+  }
+
+  .ol-tc-delete {
+    color: hsl(var(--tc-hue) 70% 35%);
+    text-decoration: line-through;
+    text-decoration-thickness: 2px;
+    background-color: hsl(var(--tc-hue) 70% 50% / 0.12);
+  }
+
+  .ol-tc-delete-focused {
+    background-color: hsl(var(--tc-hue) 70% 50% / 0.3);
+  }
+}
+
+.ol-add-comment-tooltip.cm-tooltip {
+  border: none;
+  background: transparent;
+}
+
+.ol-track-changes-badge {
+  align-self: center;
+  margin: 0 var(--spacing-02);
+  background-color: var(--bg-accent-01);
+  color: #fff;
+  white-space: nowrap;
+}
+
+// the panel column inside .cm-scroller
+.ol-review-panel {
+  position: relative;
+  flex: 0 0 300px;
+  width: 300px;
+  align-self: stretch;
+  min-height: 100%;
+  border-left: 1px solid var(--border-primary);
+  background-color: var(--bg-light-secondary);
+  color: var(--content-primary);
+  font-family: var(--font-sans);
+  font-size: 14px;
+  line-height: 1.4;
+  cursor: auto;
+}
+
+.ol-review-panel-inner {
+  min-height: 100%;
+}
+
+.ol-review-panel-header {
+  position: sticky;
+  top: 0;
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-02);
+  padding: var(--spacing-03);
+  border-bottom: 1px solid var(--border-primary);
+  background-color: var(--bg-light-secondary);
+}
+
+.ol-review-panel-header-row,
+.ol-review-track-changes {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--spacing-03);
+  margin: 0;
+}
+
+.ol-review-track-changes span {
+  white-space: nowrap;
+}
+
+.ol-review-tabs {
+  display: flex;
+  gap: var(--spacing-02);
+}
+
+.ol-review-tab {
+  border: none;
+  border-bottom: 2px solid transparent;
+  background: none;
+  padding: var(--spacing-01) var(--spacing-02);
+  color: inherit;
+
+  &.active {
+    border-bottom-color: var(--border-active);
+    font-weight: 600;
+  }
+}
+
+.ol-review-bulk-actions,
+.ol-review-card-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-02);
+}
+
+.ol-review-card-actions {
+  margin-top: var(--spacing-02);
+}
+
+.ol-review-entries {
+  position: relative;
+}
+
+.ol-review-card {
+  position: absolute;
+  left: var(--spacing-03);
+  right: var(--spacing-03);
+  padding: var(--spacing-03);
+  border: 1px solid var(--border-primary);
+  border-radius: var(--border-radius-base);
+  background-color: var(--bg-light-primary);
+  box-shadow: 0 1px 2px rgb(0 0 0 / 0.08);
+  transition: top 0.1s ease-out;
+
+  &.ol-review-card-focused {
+    left: 0;
+    border-color: var(--border-active);
+    box-shadow: 0 2px 6px rgb(0 0 0 / 0.18);
+    z-index: 2;
+  }
+
+  textarea {
+    margin-top: var(--spacing-02);
+    resize: none;
+  }
+}
+
+.ol-review-card-header {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-02);
+}
+
+.ol-review-card-icon {
+  font-size: 18px;
+}
+
+.ol-review-author {
+  font-weight: 600;
+  color: hsl(var(--tc-hue) 70% 35%);
+}
+
+.ol-review-time {
+  color: var(--content-secondary);
+  font-size: 12px;
+}
+
+.ol-review-message + .ol-review-message {
+  margin-top: var(--spacing-03);
+}
+
+.ol-review-message-actions {
+  margin-left: auto;
+
+  .btn {
+    padding: 0 var(--spacing-01);
+    font-size: 12px;
+  }
+}
+
+.ol-review-message-content,
+.ol-review-change-text {
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+
+.ol-review-empty {
+  padding: var(--spacing-05) var(--spacing-03);
+  color: var(--content-secondary);
+  text-align: center;
+}
+
+.ol-review-overview {
+  padding: var(--spacing-03);
+}
+
+.ol-review-overview-group + .ol-review-overview-group {
+  margin-top: var(--spacing-05);
+}
+
+.ol-review-overview-path {
+  font-size: 14px;
+  font-weight: 600;
+  overflow-wrap: anywhere;
+}
+
+.ol-review-overview-count {
+  font-weight: normal;
+  color: var(--content-secondary);
+}
+
+.ol-review-overview-item {
+  display: flex;
+  align-items: baseline;
+  gap: var(--spacing-02);
+  width: 100%;
+  padding: var(--spacing-02);
+  border: none;
+  border-radius: var(--border-radius-base);
+  background: none;
+  color: inherit;
+  text-align: left;
+  overflow-wrap: anywhere;
+
+  &:hover {
+    background-color: var(--bg-light-primary);
+  }
+}
+
+.ol-review-resolved-popover {
+  max-width: 320px;
+
+  .popover-body {
+    max-height: 60vh;
+    overflow-y: auto;
+  }
+}
+
+.ol-review-resolved-thread + .ol-review-resolved-thread {
+  margin-top: var(--spacing-03);
+  padding-top: var(--spacing-03);
+  border-top: 1px solid var(--border-primary);
+}
+
+.ol-review-resolved-path,
+.ol-review-resolved-by {
+  font-size: 12px;
+  opacity: 0.75;
+}
+
+.ol-review-resolved-popover .ol-review-author {
+  color: inherit;
+}

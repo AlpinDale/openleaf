@@ -1,0 +1,153 @@
+html,
+body,
+#root {
+  height: 100%;
+}
+
+// Pages outside the editor (dashboard, account, auth)
+.openleaf-page {
+  min-height: 100%;
+  background-color: var(--bg-primary-themed);
+  color: var(--content-primary-themed);
+
+  .table {
+    --bs-table-bg: transparent;
+    --bs-table-color: var(--content-primary-themed);
+
+    border-color: var(--border-divider-themed);
+  }
+
+  .card {
+    background-color: var(--bg-primary-themed);
+    border-color: var(--border-divider-themed);
+    color: var(--content-primary-themed);
+  }
+
+  h1,
+  h2,
+  .h3,
+  .h4 {
+    color: var(--content-primary-themed);
+  }
+}
+
+.openleaf-app-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 56px;
+  padding: 0 var(--spacing-06);
+  border-bottom: 1px solid var(--border-divider-themed);
+  background-color: var(--bg-primary-themed);
+}
+
+.openleaf-app-header .openleaf-app-header-brand {
+  font-weight: bold;
+  font-size: var(--font-size-05);
+  color: var(--content-positive-themed);
+  text-decoration: none;
+
+  &:hover,
+  &:focus,
+  &:visited {
+    color: var(--content-positive-themed);
+    text-decoration: none;
+  }
+}
+
+.openleaf-page .btn-ghost {
+  @include ol-button-variant(
+    var(--content-primary-themed),
+    transparent,
+    transparent,
+    var(--bg-secondary-themed),
+    transparent,
+    true
+  );
+}
+
+.openleaf-icon-toggle.dropdown-toggle::after {
+  display: none;
+}
+
+.openleaf-dashboard,
+.openleaf-account {
+  padding-top: var(--spacing-08);
+  padding-bottom: var(--spacing-10);
+}
+
+.openleaf-dashboard-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: var(--spacing-06);
+}
+
+.openleaf-dashboard-filters {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: var(--spacing-05);
+  margin-bottom: var(--spacing-05);
+
+  .ol-tabs {
+    flex: 1 1 auto;
+    min-width: 0;
+
+    .nav-tabs {
+      border-bottom-color: var(--border-divider-themed);
+      margin-bottom: 0;
+
+      li > button {
+        color: var(--content-secondary-themed);
+
+        &:hover {
+          background-color: var(--bg-secondary-themed);
+        }
+      }
+
+      li > button.active {
+        color: var(--content-primary-themed);
+      }
+    }
+  }
+
+  .form-control-wrapper,
+  .openleaf-dashboard-search {
+    max-width: 320px;
+  }
+}
+
+.project-dash-table .dash-cell-actions {
+  display: table-cell;
+  width: 64px;
+}
+
+.openleaf-secret {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-03);
+
+  code {
+    word-break: break-all;
+  }
+}
+
+// Auth pages
+.openleaf-auth-page {
+  min-height: 100%;
+  padding: var(--spacing-11) var(--spacing-04) 0;
+  background-color: var(--bg-light-secondary);
+}
+
+.openleaf-auth-brand {
+  text-align: center;
+  font-size: var(--font-size-07);
+  font-weight: bold;
+  color: var(--green-50);
+  margin-bottom: var(--spacing-06);
+}
+
+.openleaf-auth-card {
+  padding: var(--spacing-07) var(--spacing-05);
+}

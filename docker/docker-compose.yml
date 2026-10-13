@@ -1,0 +1,46 @@
+services:
+  openleaf:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile
+    ports:
+      - "${OPENLEAF_BIND_ADDRESS:-127.0.0.1}:${OPENLEAF_PORT:-3000}:3000"
+    environment:
+      OPENLEAF_PUBLIC_URL: "${OPENLEAF_PUBLIC_URL:?Set OPENLEAF_PUBLIC_URL to the browser-facing HTTP(S) origin}"
+      OPENLEAF_DATA_DIR: "${OPENLEAF_DATA_DIR:-/var/lib/openleaf}"
+      OPENLEAF_ALLOW_SIGNUP: "${OPENLEAF_ALLOW_SIGNUP:-false}"
+      OPENLEAF_TEXLIVE_IMAGES: "${OPENLEAF_TEXLIVE_IMAGES:-texlive/texlive:latest}"
+      OPENLEAF_COMPILE_MEMORY: "${OPENLEAF_COMPILE_MEMORY:-4g}"
+      OPENLEAF_COMPILE_CPUS: "${OPENLEAF_COMPILE_CPUS:-2}"
+      OPENLEAF_COMPILE_TIMEOUT_SECONDS: "${OPENLEAF_COMPILE_TIMEOUT_SECONDS:-240}"
+      OPENLEAF_MAX_CONCURRENT_COMPILES: "${OPENLEAF_MAX_CONCURRENT_COMPILES:-2}"
+      OPENLEAF_MAX_UPLOAD_MB: "${OPENLEAF_MAX_UPLOAD_MB:-50}"
+      OPENLEAF_COMPILE_SCRATCH_MB: "${OPENLEAF_COMPILE_SCRATCH_MB:-1024}"
+      OPENLEAF_MAX_PROJECT_STATE_MB: "${OPENLEAF_MAX_PROJECT_STATE_MB:-128}"
+      OPENLEAF_MAX_REALTIME_MESSAGES_PER_MINUTE: "${OPENLEAF_MAX_REALTIME_MESSAGES_PER_MINUTE:-6000}"
+      OPENLEAF_MAX_REALTIME_CONNECTIONS_PER_USER: "${OPENLEAF_MAX_REALTIME_CONNECTIONS_PER_USER:-32}"
+      OPENLEAF_MAX_CONCURRENT_GIT_OPERATIONS: "${OPENLEAF_MAX_CONCURRENT_GIT_OPERATIONS:-4}"
+      OPENLEAF_GIT_MEMORY_MB: "${OPENLEAF_GIT_MEMORY_MB:-512}"
+      OPENLEAF_MAX_JSON_BODY_MB: "${OPENLEAF_MAX_JSON_BODY_MB:-10}"
+      OPENLEAF_REQUEST_TIMEOUT_SECONDS: "${OPENLEAF_REQUEST_TIMEOUT_SECONDS:-120}"
+      OPENLEAF_SUPPORT_URL: "${OPENLEAF_SUPPORT_URL:-}"
+      OPENLEAF_PANDOC: "${OPENLEAF_PANDOC:-pandoc}"
+      OPENLEAF_TRUST_PROXY: "${OPENLEAF_TRUST_PROXY:-false}"
+    # Compile containers are siblings started through the host's Docker daemon
+    # and bind-mount compile directories by *host* path, so the data directory
+    # must live at the same absolute path inside and outside this container.
+    # Set OPENLEAF_PUBLIC_URL to the browser-facing origin (including custom port).
+    # Create OPENLEAF_DATA_DIR on the host and chown it to uid:gid 1000:1000 first.
+    # Loopback binding expects a host reverse proxy; set OPENLEAF_BIND_ADDRESS for direct access.
+    # Signups default off after the first (bootstrap) account.
+    # Compile scratch is tmpfs: scratch + /tmp (512 MiB) count toward COMPILE_MEMORY.
+    # Upload limits are per file; multipart batches and decoded ZIPs are capped at 6x.
+    # Project-state limits include Yjs structure/tombstones, not just visible text.
+    volumes:
+      - "${OPENLEAF_DATA_DIR:-/var/lib/openleaf}:${OPENLEAF_DATA_DIR:-/var/lib/openleaf}"
+      - "${OPENLEAF_DOCKER_SOCKET:-/var/run/docker.sock}:/var/run/docker.sock"
+    # Lets the unprivileged `node` user talk to the Docker socket; set
+    # DOCKER_GID to the group id owning /var/run/docker.sock on the host.
+    group_add:
+      - "${DOCKER_GID:?Set DOCKER_GID to the Docker socket owning group id}"
+    restart: unless-stopped
